@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/logo/logo-agrosoft.png" type="image/x-icon">
+
+</head>
+<body id="login">
+    <main class="contenedor-login">
+        <article class="tarjeta-login">
+            <header class="encabezado-login">
+                <img src="./assets/images/logo/logo-agrosoft.png" alt="logo-agrosoft">
+                <h1>AgroSoft</h1>
+                <p>Bienvenido de vuelta</p>
+            </header>
+        <form class="formulario-login">
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <div class="icono-input">
+                    <img src="./assets/images/icons/icono-correo.svg" class="icono-inicio" alt="email">
+                    <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com" required>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="contraseña">Contraseña</label>
+                <div class="icono-input">
+                    <img src="./assets/images/icons/icono-candado.svg" class="icono-inicio" alt="candado">
+                    <input type="password" id="contraseña" name="contraseña" placeholder="••••••••" required>
+                    <img src="./assets/images/icons/icono-ojo.svg" class="icono-final" alt="ver">
+                </div>
+            </div>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          <button type="submit" class="btn-login">Iniciar Sesión</button></a>
+        </form>
+        <section class="parte-registro">
+            <p>¿No tienes cuenta?</p>
+            <button type="submit" class="btn-register" onclick="window.location.href='./register.html'">Crear Cuenta</button>
+        </section>
+        </article>
+
+        <footer class="pie-login">
+            <img src="./assets/images/logo/logo-sena.png" alt="Logo-SENA">
+            <p>© 2026 SENA - Servicio Nacional de Aprendizaje</p>
+            <p>Todos los derechos reservados</p>
+        </footer>
+    </main>
+</body>
+</html>

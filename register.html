@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/logo/logo-agrosoft.png" type="image/x-icon">
+
+</head>
+<body id="register">
+    <main class="contenedor-register">
+        <article class="tarjeta-register">
+            <header class="encabezado-register">
+                <img src="./assets/images/logo/logo-agrosoft.png" alt="logo-agrosoft">
+                <h1>Crear Cuenta</h1>
+                <p>Únete a AgroSoft</p>
+            </header>
+
+        <form class="formulario-register">
+            <div class="campo">
+               <label for="nombre">Nombre Completo</label>
+                <div class="icono-input">
+                    <img src="./assets/images/icons/icono-usuario.svg" class="icono-inicio" alt="nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <div class="icono-input">
+                    <img src="./assets/images/icons/icono-correo.svg" class="icono-inicio" alt="email">
+                    <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com" required>
+                </div>
+            </div>
+            <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <div class="icono-input">
+                        <img src="./assets/images/icons/icono-telefono.svg" class="icono-inicio" alt="tel">
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567" required>
+                    </div>
+                </div>
+                <p class="titulo-tipo">Tipo de cuenta</p>
+                <div class="selector-cuenta">
+                    <div class="opcion-cuenta activa">
+                        <img src="./assets/images/icons/icono-usuario.svg" alt="usuario">
+                        <p>Usuario</p>
+                    </div>
+                    <div class="opcion-cuenta">
+                        <img src="./assets/images/icons/icono-escudo-check.svg" alt="admin">
+                        <p>Admin</p>
+                    </div>
+                </div>
+                <p class="descripcion-tipo">Acceso estándar para agricultores</p>
+                <div class="campo">
+                    <label for="contraseña">Contraseña</label>
+                    <div class="icono-input">
+                        <img src="./assets/images/icons/icono-candado.svg" class="icono-inicio" alt="candado">
+                        <input type="password" id="contraseña" name="contraseña" placeholder="••••••••" required>
+                        <img src="./assets/images/icons/icono-ojo.svg" class="icono-final" alt="ver">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <div class="icono-input">
+                        <img src="./assets/images/icons/icono-candado.svg" class="icono-inicio" alt="candado">
+                        <input type="password" id="confirmar" name="confirmar" placeholder="••••••••" required>
+                    </div>
+                </div>
+            <button class="btn-register">Crear Cuenta</button>
+        </form>
+        <section class="parte-login">
+            <p>¿Ya tienes cuenta?</p>
+            <a href="./login.html">Iniciar Sesión</a>
+        </section>
+        </article>
+
+        <footer class="pie-register">
+            <img src="./assets/images/logo/logo-sena.png" alt="Logo-SENA">
+            <p>© 2026 SENA - Servicio Nacional de Aprendizaje</p>
+            <p>Todos los derechos reservados</p>
+        </footer>
+    </main>
+</body>
+</html>

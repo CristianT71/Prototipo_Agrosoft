@@ -1,0 +1,32 @@
+/*Adaptar a pantallas mas grandes*/
+
+/*Pantalla login*/
+@media (min-width: 581px) {
+.tarjeta-login {
+    width: 448px;
+    margin: 50px auto;
+}
+
+/*Formulario*/
+.formulario-login {
+    width: 395px;
+}
+
+.formulario-login .btn-login {
+    display: block;
+    width: 395px;
+    margin-left: -20px;
+}
+
+.parte-registro .btn-register {
+    position: relative;
+    top: 10px;
+    width: 395px;
+}
+
+.pie-login {
+    position: relative;
+    top: -155px;
+    text-align: center;
+}
+}

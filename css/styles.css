@@ -1,0 +1,354 @@
+/*Reset global, eliminar espacios por defecto y ajuste a cajas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos para el cuerpo de las paginas*/
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: #EFF4EE;
+    
+}
+
+/*Tipografia para los títulos principales*/
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/*Estilos página login*/
+.tarjeta-login {
+    width: 360px;
+    height: 675px;
+    background-color: #ffffff;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.encabezado-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.encabezado-login img{
+    width: 74px;
+    height: 73px;
+}
+
+.encabezado-login h1{
+    font-size: 24px;
+    color: #1a2e1a;
+}
+
+.encabezado-login p{
+   font-size: 14px;
+   color: #5a6c5a;
+   font-weight: 500;
+}
+
+/*Formulario*/
+.formulario-login {
+    width: 310px;
+    height: 230px;
+    background-color: #F8FAF7;
+    border-radius: 20px;
+    margin: 24px auto;
+    padding: 25px 20px;
+    border: 1px solid rgb(238, 236, 236);
+}
+
+.formulario-login .campo {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+label {
+    color: #1a2e1a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 45px;
+    font-size: 14px;
+}
+
+input:focus{
+    outline: none; 
+    border: 1px solid rgb(0, 14, 3); 
+    box-shadow: 0 0 2px 3px rgba(4, 101, 12, 0.5);
+}
+
+
+input[type="password"] {
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+/*Iconos del input*/
+.icono-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icono-inicio {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.icono-final {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.formulario-login a {
+    color: #2D7A3E;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+}
+
+.formulario-login .btn-login {
+    display: block;
+    width: 310px;
+    margin-left: -20px;
+    height: 43px; 
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2D7A3E;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.formulario-login .btn-login:hover{
+    background-color: #3c864c;
+}
+
+/*Boton a Registro*/
+.parte-registro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+}
+
+.parte-registro p {
+    font-size: 14px;
+    color: #5a6c5a;
+}
+
+.parte-registro .btn-register {
+    position: relative;
+    top: 10px;
+    width: 310px;
+    height: 42px;
+    background-color: #F8FAF7;
+    color: #1a2e1a;
+    border: 1px solid rgb(238, 236, 236);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.parte-registro .btn-register:hover {
+    background-color: #F9B820;
+}
+
+/*Pie de pagina*/
+.pie-login {
+    position: relative;
+    top: -120px;
+    text-align: center;
+}
+
+.pie-login img {
+    width: 40px;
+    height: 40px;
+}
+
+.pie-login p{
+    position: relative;
+    font-size: 12px;
+    color: #5a6c5a;
+    top: 5px;
+    line-height: 17px;
+}
+
+
+/*#####################################################################*/
+
+/*Estilos pagina registro*/
+
+.tarjeta-register {
+    width: 360px;
+    height: 900px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.encabezado-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.encabezado-register img{
+    width: 60px;
+    height: 57px;
+}
+
+.encabezado-register h1{
+    font-size: 20px;
+    color: #1a2e1a;
+}
+
+.encabezado-register p{
+   font-size: 14px;
+   color: #5a6c5a;
+   font-weight: 500;
+}
+
+/*Formulario*/
+.formulario-register {
+    width: 310px;
+    height: 540px;
+    background-color: #F8FAF7;
+    border-radius: 20px;
+    margin: 24px auto;
+    padding: 25px 20px;
+    border: 1px solid rgb(238, 236, 236);
+}
+
+.formulario-register .campo {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-tipo {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a2e1a;
+    margin-bottom: 8px;
+}
+
+.selector-cuenta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.opcion-cuenta {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.opcion-cuenta.activa {
+    border: 2px solid #2e7d32;
+    background-color: #EDF3ED;
+}
+
+.opcion-cuenta img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.opcion-cuenta p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #5a6c5a;
+}
+.formulario-register .descripcion-tipo {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.formulario-register .btn-register {
+    position: relative;
+    display: block;
+    width: 310px;
+    margin-left: -20px;
+    height: 43px; 
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2D7A3E;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    top: -30px;
+}
+
+.parte-login {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   gap: 3px;
+   top: 45px;
+}
+
+.parte-login p { 
+    font-size: 12px;
+    color: #5a6c5a;
+
+}
+
+.parte-login a {
+    font-size: 16px;
+    color: #2D7A3E;
+    text-decoration: none;
+}
+
+/*Pie de pagina*/
+.pie-register {
+    position: relative;
+    top: -130px;
+    text-align: center;
+}
+
+.pie-register img {
+    width: 35px;
+    height: 35px;
+}
+
+.pie-register p{
+    position: relative;
+    font-size: 12px;
+    color: #5a6c5a;
+    top: 5px;
+    line-height: 17px;
+}
