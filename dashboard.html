@@ -3,13 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DashBoard</title>
+    <title>Agrosoft - Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body id="dashboard">
-    <main class="contenedor-dashboard">
-        <div class="menu">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
 
+            <nav class="lista-menu">
+                <ul>
+                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <main class="contenido-dash">
+
+                <section class="bienvenida">
+                    <h1>¡Hola, Usuario!</h1>
+                    <p>Bienvenido a tu panel de gestión agrícola</p>
+                    <div class="divicion-bienvenida">
+                        <div class="tarjeta">
+                            <div class="tarjeta-header">
+                                <img src="./assets/images/icons/icono-paquete-w.svg">
+                                <span class="numero">8</span>
+                            </div>
+                            <div class="tarjeta-p">
+                                <p>Unidades Productivas</p>
+                                <p>+2 este mes</p>
+                            </div>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="tarjeta-header">
+                                <img src="./assets/images/icons/icono-alerta-triangulo-w.svg">
+                                <span class="numero">3</span>
+                            </div>
+                            <div class="tarjeta-p">
+                                <p>Incidencias Activas</p>
+                                <p>-1 vs semana pasada</p>
+                            </div>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="tarjeta-header">
+                                <img src="./assets/images/icons/icono-jeringa-w.svg">
+                                <span class="numero">5</span>
+                            </div>
+                            <div class="tarjeta-p">
+                                <p>Tratamientos Activos</p>
+                                <p>2 próximos a vencer</p>
+                            </div>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="tarjeta-header">
+                                <img src="./assets/images/icons/icono-trigo-w.svg">
+                                <span class="numero">12</span>
+                            </div>
+                            <div class="tarjeta-p">
+                                <p>Cosechas este mes</p>
+                                <p>195 kg totales</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="dashboard-grid">
+                    <a href="#" class="tarjeta-min">
+                        <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono_paquete-v.png">
+                            <span>Unidades</span>
+                        </div>
+                        <p class="numero">8</p>
+                    </a>
+
+                    <a href="#" class="tarjeta-min">
+                        <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono-alerta-triangulo-r.png" alt="">
+                            <span>Incidencias</span>
+                        </div>
+                        <p class="numero">3</p>
+                    </a>
+
+                    <a href="#" class="tarjeta-min">
+                        <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono-jeringa-a.png" alt="">
+                            <span>Tratamientos</span>
+                        </div>
+                        <p class="numero">5</p>
+                    </a>
+
+                    <a href="#" class="tarjeta-min">
+                        <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono-trigo-v.png" alt="">
+                            <span>Cosechas</span>
+                        </div>
+                        <p class="numero">12</p>
+                    </a>
+
+                    <section class="acciones-rapidas">
+                        <h2>Acciones Rápidas</h2>
+                        <ul>
+                            <li>
+                                <img src="./assets/images/icons/icono-paquete.svg">
+                                <a href="#">Nueva Unidad Productiva
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/icono-alerta-triangulo.svg">
+                                <a href="#">Registrar Incidencia
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/icono-jeringa.svg">
+                                <a href="#">Aplicar Tratamiento
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/icono-trigo.svg">
+                                <a href="#">Registrar Cosecha
+                                </a>
+                            </li>
+                            <li>
+                                <img src="./assets/images/icons/icono-signo-dolar.svg">
+                                <a href="#">Registrar Venta
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="alertas-activas">
+                        <div class="seccion-titulo">
+                            <h2>Alertas Activas</h2>
+                            <a href="#">Ver todas</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <b>Incidencia requiere atención</b>
+                                    <p>Manchas amarillas activas desde hace 3 días</p>
+                                    <span>ALTA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>Tratamiento próximo a vencer</b>
+                                    <p>Insecticida de contacto vence en 1 día</p>
+                                    <span>ALTA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <b>Inventario bajo</b>
+                                    <p>Fertilizante NPK por debajo del mínimo</p>
+                                    <span>MEDIA</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="tareas-proximas">
+                        <div class="seccion-titulo">
+                            <h2>Tareas Próximas</h2>
+                            <a href="#">Ver todas</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-calendario-w.svg">
+                                    <b>Aplicar Fertilizante</b>
+                                    <p><img src="./assets/images/icons/icono-luna.svg">Tomate Lote A</p>
+                                    <p>Mañana 09:00</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-calendario-w.svg">
+                                    <b>Revisar sistema de riego</b>
+                                    <p><img src="./assets/images/icons/icono-luna.svg">Lechuga Lote B</p>
+                                    <p>Mañana 14:00</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-calendario-w.svg">
+                                    <b>Cosecha programada</b>
+                                    <p><img src="./assets/images/icons/icono-luna.svg">Pimentón Invernadero</p>
+                                    <p>26 Abr 10:00</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="actividad-reciente">
+                        <div class="seccion-titulo">
+                            <h2>Actividad Reciente</h2>
+                            <a href="#">Ver historial</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-alerta-triangulo.svg">
+                                    <b>Nueva incidencia registrada</b>
+                                    <p>Manchas amarillas - Tomate Lote A</p>
+                                    <p><img src="./assets/images/icons/icono-reloj.svg">Hace 2 horas</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-jeringa.svg">
+                                    <b>Tratamiento aplicado</b>
+                                    <p>Fungicida orgánico - Lechuga Lote B</p>
+                                    <p><img src="./assets/images/icons/icono-reloj.svg">Hace 5 horas</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-trigo.svg">
+                                    <b>Cosecha registrada</b>
+                                    <p>45 kg de tomate cherry - Calidad A</p>
+                                    <p><img src="./assets/images/icons/icono-reloj.svg">Hace 1 día</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/icons/icono-signo-dolar.svg">
+                                    <b>Venta realizada</b>
+                                    <p>$180.000 Supermercado Central</p>
+                                    <p><img src="./assets/images/icons/icono-reloj.svg">Hace 1 día</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="ingresos-mes">
+                        <div class="seccion-titulo">
+                            <h2>Ingresos del Mes</h2>
+                            <img src="./assets/images/icons/icono-tendencia-alza.svg">
+                        </div>
+                            <b>$345.000</b>
+                            <p>+12% vs mes anterior</p>
+                            <button>Ver ventas</button>
+                    </section>
+                </div>
+            </main>
         </div>
-    </main>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

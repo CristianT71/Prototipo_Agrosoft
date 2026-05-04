@@ -30,3 +30,35 @@
     text-align: center;
 }
 }
+
+/*Responsive para dashboard*/
+
+/*Pantalla pequeñas*/
+/* Responsive - Pantallas pequeñas */
+@media (max-width: 1024px) {
+    .icono-cerrar {
+        display: flex;
+    }
+
+    .icono-cerrar2 {
+        display: none;
+    }
+
+    .menu-lateral {
+        display: none;
+    }
+
+    .menu-lateral.activo {
+        display: block;
+    }
+
+    .barra-superior {
+        width: 100%;
+        left: 0;
+    }
+
+    .boton-hamburguesa button{
+        display: flex;
+    }
+    
+}   
