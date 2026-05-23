@@ -23,3 +23,60 @@ if (iconoCerrar && menuLateral) {
         menuLateral.classList.remove('activo');
     });
 }
+
+//Funcionamiento de los botones de reportes
+const select = document.querySelector('.select');
+const boton = document.querySelector('.select-boton');
+const opciones = document.querySelectorAll('.select-menu li');
+const texto = document.querySelector('.select-texto');
+
+
+boton.addEventListener('click', () => {
+    select.classList.toggle('abierto');
+});
+
+opciones.forEach(opcion => {
+    opcion.addEventListener('click', () => {
+        texto.textContent = opcion.textContent;
+        select.classList.remove('abierto');
+    });
+});
+
+document.addEventListener('click', (e) => {
+    if (!select.contains(e.target)) {
+        select.classList.remove('abierto');
+    }
+});
+
+
+//Sobre los tipos de reporte
+const selectFormato = document.querySelector('.select-formato');
+const botonFormato = document.querySelector('.boton-formato');
+const opcionesFormato = selectFormato.querySelectorAll('.select-menu2 li');
+const textoFormato = selectFormato.querySelector('.select-texto2');
+
+botonFormato.addEventListener('click', () => {
+    selectFormato.classList.toggle('abierto');
+});
+
+opcionesFormato.forEach(opcion => {
+    opcion.addEventListener('click', () => {
+        textoFormato.textContent = opcion.textContent;
+        selectFormato.classList.remove('abierto');
+    });
+});
+document.addEventListener('click', (e) => {
+    if (!select.contains(e.target)) select.classList.remove('abierto');           
+    if (!selectFormato.contains(e.target)) selectFormato.classList.remove('abierto'); 
+});
+
+//Para que seleccione donde estoy ubiicado 
+const linksMenu = document.querySelectorAll('.lista-menu a');
+
+linksMenu.forEach(link => {
+    if (link.href === window.location.href) {
+        link.parentElement.classList.add('activo');
+    } else {
+        link.parentElement.classList.remove('activo');
+    }
+});
