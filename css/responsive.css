@@ -21,7 +21,7 @@
 .parte-registro .btn-register {
     position: relative;
     top: 10px;
-    width: 395px;
+    min-width: 395px;
 }
 
 .pie-login {
@@ -29,6 +29,64 @@
     top: -155px;
     text-align: center;
 }
+
+
+/*Registro*/
+.tarjeta-register {
+    width: 576px;
+    height: 740px;
+}
+
+.formulario-register {
+    width: 90%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    column-gap: 45px;
+}
+
+.formulario-register .campo {
+    display: grid;
+}
+
+
+.formulario-register .campo input {
+    width: 235px;
+}
+
+.titulo-tipo {
+    position: relative;
+    top: 90px;
+    left: -245px;
+}
+
+.selector-cuenta {
+    position: relative;
+    top: 40px;
+    width: 480px;
+}
+
+.opcion-cuenta {
+    width: 300px;
+    height: 65px;
+    margin-bottom: 60px;
+}
+
+.descripcion-tipo {
+    position: relative;
+    top: 110px;
+    left: -245px;
+}
+
+.btn-register {
+    min-width: 520px;
+}
+
+.pie-register {
+    margin-top: 40px;
+}
+
+
 }
 
 /*Responsive para dashboard*/
@@ -61,4 +119,98 @@
         display: flex;
     }
     
+
+
+
+    /*Dahsboard para pantallas pequeñas*/
+
+    .buscador {
+        display: none;
+    }
+
+    .contenido-principal {
+        margin-left: 0;
+    }
+
+    .bienvenida {
+        width: 100%;
+        height: 460px;
+    }
+
+    .divicion-bienvenida {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta {
+        width:140px;
+        height: 145px;
+    }
+
+    .tarjeta-header .numero {
+        position: relative;
+        left: 60px;
+        font-size: 24px;
+        font-weight: 700;
+        gap: 25px;
+    }
+
+    .dashboard-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .dashboard-grid .tarjeta-min {
+      width: calc(50% - 12.5px);
+      height: 150px;
+      order: 1;    /*Esto se usa para poder ubicar los contenedores como quiera uno debajo del otro*/
+      z-index: -2;
+    }
+
+    .alertas-activas {
+        width: 100%;
+        order: 2;
+    }
+    
+    .alertas-activas .seccion-titulo {
+        gap: 0;
+
+    }
+
+    .alertas-activas span.alta {
+        position: relative;
+        left: 260px;
+        top: -25px;
+    }
+
+    .alertas-activas span.media {
+        position: relative;
+        left: 252px;
+        top: -25px;
+    }   
+
+    .actividad-reciente {
+      width: 100%;
+      order: 3;
+    }
+
+    .actividad-reciente .seccion-titulo {
+        gap: 0;
+    }
+
+    .acciones-rapidas {
+        width: 100%;
+        order: 4;
+    }
+
+    .tareas-proximas{
+        width: 100%;
+        order: 5;
+    }
+
+    .ingresos-mes {
+        order: 6;
+    }
+
 }   

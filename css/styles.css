@@ -974,6 +974,80 @@ input[type="password"] {
     align-items: center;
 }
 
+.alertas-activas ul li{
+    height: 70px;
+    font-size: 14px;
+    list-style: none;
+    margin: 20px;
+    border: 1px solid rgb(239, 237, 237);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.alertas-activas ul li:hover {
+    background-color: #F3F7F2;
+}
+
+.alertas-activas ul li a b {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.alertas-activas ul li a p {
+    position: relative;
+    font-size: 12px;
+    padding-left: 23px;
+    font-weight: 100;
+    color: gray;
+    top: 7px;
+    
+}
+.alertas-activas ul li a span{
+    font-size: 12px;
+    position: relative;
+    left: 700px;
+    top: -20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 4px 9px;
+}
+
+.punto-alerta {
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    border-radius: 50%;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.punto-alerta-n {
+    width: 8px;
+    height: 8px;
+    background-color: #FF6900;
+    border-radius: 50%;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+
+.alertas-activas span.alta {
+    background-color: #DC2626;
+    width: 40px;
+    height: 33px;
+}
+
+.alertas-activas span.media {
+    background-color: #2D7A3E;
+    width: 40px;
+    height: 33px;
+}
+
+.alertas-activas ul li a {
+    text-decoration: none; color: #1A2E1A;
+}
+
 .alertas-activas .seccion-titulo h2 {
     font-size: 20px;
     color: #1A2E1A;
@@ -997,7 +1071,7 @@ input[type="password"] {
     background-color: #FBBF24;
 }
 
-
+/*section tareas*/
 
 .tareas-proximas {
     grid-column: 5/6;
@@ -1007,6 +1081,61 @@ input[type="password"] {
     border: 1px solid gainsboro;
 }
 
+.tareas-proximas .seccion-titulo{
+    display: flex;
+    margin: 20px;
+    gap: 50px;
+    align-items: center;
+}
+
+.tareas-proximas .seccion-titulo h2 {
+    font-size: 20px;
+}
+
+.tareas-proximas .seccion-titulo a {
+    font-size: 14px;
+    color: #1A2E1A;
+    
+}
+
+.tareas-proximas li {
+    margin: 20px; 
+    list-style: none;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.tareas-proximas li:hover {
+    background-color: #F3F7F2;
+}
+
+.tareas-proximas a {
+    text-decoration: none;
+}
+
+.tareas-proximas a img {
+    position: relative;
+    width: 18px;
+}
+
+.tareas-proximas b {
+    font-size: 14px;
+    color: #1A2E1A;
+}
+
+.tareas-proximas p {
+    font-size: 12px;
+    color: #5A6C5A;
+    padding-left: 20px;
+}
+
+.tareas-proximas p img {
+    width: 15px;
+    padding: 1px;
+}
+
+/*section Actividad reciente*/
 .actividad-reciente {
     grid-column: 1/5;
     grid-row: 4/7;
@@ -1015,60 +1144,331 @@ input[type="password"] {
     border: 1px solid gainsboro;;
 }
 
+.actividad-reciente .seccion-titulo {
+    display: flex;
+    gap: 470px;
+    padding: 20px;
+}
+
+.actividad-reciente .seccion-titulo h2 {
+    font-size: 20px;
+}
+
+.actividad-reciente .seccion-titulo a {
+    text-decoration: none;
+    color: #1A2E1A;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+}
+
+.actividad-reciente .seccion-titulo a:hover {
+    background-color: #F9B820;
+}
+
+.actividad-reciente ul li {
+    list-style: none;
+    height: 70px;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+    border-bottom: 1px solid gainsboro;
+    width: 750px;
+    margin: 30px 30px;
+    position: relative;
+}
+
+
+.actividad-reciente ul li img {
+    width: 35px;
+}
+
+.actividad-reciente b {
+    position: relative;
+    font-size: 14px;
+    left: 10px;
+    top: -18px;
+}
+
+.actividad-reciente p {
+    display: flex;
+    padding: 1px;
+    position: relative;
+    top: -15px;
+    left: 50px;
+    gap: 5px;
+}
+
+.actividad-reciente ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #1A2E1A;
+    font-size: 12px;
+    align-items: center;
+}
+
+.actividad-reciente a p img {
+    width: 10px;
+}
+
+/*section ingresos mes*/
+
 .ingresos-mes {
     grid-column: 5/6;
     grid-row: 5/8;
-    background-color: #ffffff;
+    background-color: #E1F3E8;
     border-radius: 20px;
     border: 1px solid gainsboro;
 }
 
+.ingresos-mes .seccion-titulo {
+    display: flex;
+    gap: 135px;
+    padding: 30px;
+}
 
+.ingresos-mes .seccion-titulo h2 {
+    font-size: 18px;
+    color: #1A2E1A;
+}
 
+.ingresos-mes .seccion-titulo img {
+    width: 20px;
+}
 
+.ingresos-mes b {
+    font-size: 30px;
+    color: #10b981;
+    padding: 30px;
+}
 
+.ingresos-mes p {
+    padding: 30px;
+    color: #1A2E1A;
+    font-weight: 100;
+}
 
+.ingresos-mes button {
+    margin: 30px;
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ingresos-mes button:hover {
+    background-color: #F9B820;
+}
 
 /*Estilos contenido tareas*/
+.contenido-tareas {
+    margin-top: 10px;
+    min-height: calc(100vh - 63px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+
 .header-tareas {
     display: flex;
 }
 
+.header-tareas h1 {
+    position: relative;
+    top: 80px;
+    left: 30px;
+    font-size: 30px;
+
+}
+
 .header-tareas p{
     position: relative;
-    top: 50px;
-    left: -351px;
+    top: 130px;
+    left: -300px;
     color: #5a6c5a;
+    font-size: 16px;
 }
 
 .header-tareas button {
     position: relative;
     width: 145px;
     height: 40px;
-    left: 380px;
-    top: 20px;
+    left: 400px;
+    top: 90px;
     color: #ffffff;
     background-color:#2C793D;
     border: none;
     border-radius: 10px;
+}
+
+.tareas-grid {
+    display: grid;
+    position: relative;
+    margin: 30px;
+    grid-template-columns: 290px 90px 180px 290px 290px;
+    grid-template-rows: 100px 620px;
+    gap: 20px; 
+    top: 100px;
+}
+
+.tareas-grid .tarjeta-min {
+    width: 290px;
+    height: 100px;
+    background-color: #FFFFFF;
+}
+
+.tareas-grid .tarjeta-min .tarjeta-icono-texto p{
+    font-size: 14px;
+    color: #5a6c5a;
+}
+
+.tareas-grid .tarjeta-min .tarjeta-icono-texto span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1A2E1A;
+    text-align: start;
+}
+
+.tareas-grid .tarjeta-min img {
+    position: relative;
+    top: -70px;
+    left: 240px;
+}
+
+.tarjeta-min1 {
+    grid-column: 1/2;
+}
+
+.tarjeta-min2 {
+    grid-column: 2/4;
+}
+
+.tarjeta-min3 {
+    grid-column: 4/5;
+}
+
+.tarjeta-min4 {
+    grid-column: 5/6;
+}
+
+/*Estilos del calendario*/
+/* Contenedor del calendario dentro de tu sección */
+.calendario {
+    grid-column: 1/3;
+    width: 100%;
+
+}
+
+.calendar-container {
+    height: 600px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    max-width: 380px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-container h2 {
+    font-size: 20px;
+    color: #1a2e1a;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.caja-calendario {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Encabezado */
+.calendar-header {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.calendar-header button {
+    background: #f1f5f9;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: #475569;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.calendar-header button:hover {
+    background: #e2e8f0;
+}
+
+/* Grids de días */
+.weekdays, .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    width: 220px;
+    
+}
+
+.weekdays {
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.calendar-days div {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #334155;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.calendar-days div:hover:not(.inactive):not(.active) {
+    background-color: #f1f5f9;
+}
+
+/* Días de otros meses */
+.calendar-days .inactive {
+    color: #cbd5e1;
+    cursor: default;
+}
+
+/* Día seleccionado o actual */
+.calendar-days .active {
+    background-color: #15803d; /* Verde oscuro elegante */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.lista-tareas {
+    background-color: #FFFFFF;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    grid-column: 3/6;
 }
