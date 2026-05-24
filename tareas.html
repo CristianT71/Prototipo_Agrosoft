@@ -73,15 +73,188 @@
                 </div>
             </header>
 
-            <main class="contenido">
+            <main class="contenido-tareas">
                 <div class="header-tareas">
                     <h1>Calendario de Tareas</h1>
                     <p>Gestiona y visualiza las tareas asignadas al equipo</p>
                     <button>+  Nueva Tarea</button>
                 </div>
+                <div class="tareas-grid">
+                    <a href="#" class="tarjeta-min tarjeta-min1">
+                        <div class="tarjeta-icono-texto">
+                            <p>Total Tareas</p>
+                            <span>6</span>
+                        </div>
+                        <img src="/assets/images/icons/icono-calendario.svg">
+                    </a>
+                    <a href="#" class="tarjeta-min tarjeta-min2">
+                        <div class="tarjeta-icono-texto">
+                            <p>Pendientes</p>
+                            <span>5</span>
+                        </div>
+                        <img src="/assets/images/icons/icono-reloj.svg">
+                    </a>
+                    <a href="#" class="tarjeta-min tarjeta-min3">
+                        <div class="tarjeta-icono-texto">
+                            <p>Completadas</p>
+                            <span>1</span>
+                        </div>
+                        <img src="/assets/images/icons/icono-check-circulo.svg">
+                    </a>
+                    <a href="#" class="tarjeta-min tarjeta-min4">
+                        <div class="tarjeta-icono-texto">
+                            <p>Alta prioridad</p>
+                            <span>3</span>
+                        </div>
+                        <img src="/assets/images/icons/icono-">
+                    </a>
+                    <section class="calendario">
+                        <div class="calendar-container">
+                            <h2>Calendario</h2>
+                            <div class="caja-calendario">
+                                <div class="calendar-header">
+                                    <button type="button" id="prev-btn">&lt;</button>
+                                    <h2 id="month-year"></h2>
+                                    <button type="button" id="next-btn">&gt;</button>
+                                </div>
+                                <div class="weekdays">
+                                <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+                                </div>
+                            <div class="calendar-days" id="calendar-days"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="lista-tareas">
+                        <div class="lista-tareas-header">
+                            <h2>Lista de Tareas</h2>
+                            <div class="filtro-tareas">
+                                <span>Todas las tareas</span>
+                                <img src="./assets/images/icons/icono-flecha-abajo.svg" alt="Filtrar">
+                            </div>
+                        </div>
+                    
+                        <div class="tareas-tabs">
+                            <button class="tab-btn activo">Hoy (3)</button>
+                            <button class="tab-btn">Próximas (3)</button>
+                        </div>
+                    
+                        <div class="tareas-contenedor">
+
+                            <article class="tarea-card">
+                                <div class="tarea-checkbox">
+                                    <input type="checkbox" id="tarea-1">
+                                    <label for="tarea-1" class="check-custom"></label>
+                                </div>
+
+                                <div class="tarea-contenido">
+                                    <div class="tarea-info-principal">
+                                        <div class="tarea-detalles">
+                                            <h3>Aplicar fungicida orgánico</h3>
+                                            <p class="tarea-descripcion">Aplicar 2.5 L/Ha en toda el área afectada</p>
+                                        </div>
+                                        <span class="prioridad alta">Alta</span>
+                                    </div>
+                                
+                                    <div class="tarea-meta-grid">
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-ubicacion.svg" alt="Ubicación">
+                                            <span>Tomate Cherry - Lote A</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-reloj.svg" alt="Hora">
+                                            <span>08:00</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-usuario.svg" alt="Asignado a">
+                                            <span>Asignada a: Carlos López</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-usuario.svg" alt="Creado por">
+                                            <span>Por: Juan Pérez</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        
+                            <article class="tarea-card">
+                                <div class="tarea-checkbox">
+                                    <input type="checkbox" id="tarea-2">
+                                    <label for="tarea-2" class="check-custom"></label>
+                                </div>
+
+                                <div class="tarea-contenido">
+                                    <div class="tarea-info-principal">
+                                        <div class="tarea-detalles">
+                                            <h3>Revisar sistema de riego</h3>
+                                            <p class="tarea-descripcion">Verificar presión y goteros</p>
+                                        </div>
+                                        <span class="prioridad media">Media</span>
+                                    </div>
+                                
+                                    <div class="tarea-meta-grid">
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-ubicacion.svg" alt="Ubicación">
+                                            <span>Lechuga Crespa - Lote B</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-reloj.svg" alt="Hora">
+                                            <span>14:00</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-usuario.svg" alt="Asignado a">
+                                            <span>Asignada a: María García</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-usuario.svg" alt="Creado por">
+                                            <span>Por: Ana Martínez</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        
+                            <article class="tarea-card completada">
+                                <div class="tarea-checkbox">
+                                    <input type="checkbox" id="tarea-3" checked>
+                                    <label for="tarea-3" class="check-custom"></label>
+                                </div>
+
+                                <div class="tarea-contenido">
+                                    <div class="tarea-info-principal">
+                                        <div class="tarea-detalles">
+                                            <h3>Fertilización programada</h3>
+                                            <p class="tarea-descripcion">Aplicar NPK 15-15-15</p>
+                                        </div>
+                                        <span class="prioridad media">Media</span>
+                                    </div>
+                                
+                                    <div class="tarea-meta-grid">
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-ubicacion.svg" alt="Ubicación">
+                                            <span>Pimentón - Invernadero 1</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-reloj.svg" alt="Hora">
+                                            <span>10:00</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-usuario.svg" alt="Asignado a">
+                                            <span>Asignada a: Carlos López</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <img src="./assets/images/icons/icono-usuario.svg" alt="Creado por">
+                                            <span>Por: Juan Pérez</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        
+                        </div>
+                    </section>
+                </div>
             </main>
         </div>
     </div>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
