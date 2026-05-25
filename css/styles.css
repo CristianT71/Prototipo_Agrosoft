@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /*Estilos para el cuerpo de las paginas*/
@@ -125,6 +126,11 @@ input[type="password"] {
     font-weight: 700;
     position: relative;
     top: 5px;
+    
+}
+
+.formulario-login a:hover {
+    text-decoration: underline;
 }
 
 .formulario-login .btn-login {
@@ -354,6 +360,152 @@ input[type="password"] {
     line-height: 17px;
 }
 
+/*Etilos olvide contraseña*/
+.tarjeta-reset {
+    width: 448px;
+    height: 530px;
+    background-color: #ffffff;
+    margin: 122px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.volver-inicio {
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    text-decoration: none;
+    color: #5a6c5a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.volver-inicio:hover {
+    -webkit-tap-highlight-color: transparent; /*Quitar fodno azul que sale al precionar en movil*/
+    text-decoration: underline;
+}
+
+.volver-inicio img {
+    width: 15px;
+}
+
+.encabezado-reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.encabezado-reset img{
+    position: relative;
+    width: 74px;
+    height: 73px;
+    top: -40px;
+}
+
+.encabezado-reset h1{
+    position: relative;
+    font-size: 24px;
+    color: #1a2e1a;
+    top: -40px;
+}
+
+.encabezado-reset p{
+    position: relative;
+   font-size: 14px;
+   color: #5a6c5a;
+   font-weight: 500;
+   top: -40px;
+   text-align: center;
+}
+
+/*Formulario*/
+.formulario-reset {
+    position: relative;
+    width: 398px;
+    height: 113px;
+    background-color: #F8FAF7;
+    border-radius: 20px;
+    margin: 24px auto;
+    padding: 25px 20px;
+    border: 1px solid rgb(238, 236, 236);
+    top: -50px;
+}
+
+.formulario-reset .campo {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+/*Iconos del input*/
+.icono-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icono-inicio {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.icono-final {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.formulario-reset a {
+    color: #2D7A3E;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+}
+
+.formulario-reset .btn-login {
+    display: block;
+    min-width: 400px;
+    margin-left: -20px;
+    height: 43px; 
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2D7A3E;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.formulario-reset .btn-login:hover{
+    background-color: #3c864c;
+}
+
+.pie-reset {
+    position: relative;
+    top: -230px;
+    text-align: center;
+}
+
+.pie-reset img {
+    width: 40px;
+    height: 40px;
+}
+
+.pie-reset p{
+    position: relative;
+    font-size: 12px;
+    color: #5a6c5a;
+    top: 5px;
+    line-height: 17px;
+}
+
+
 /*###################################################################################*/
 
 /*Estilos dashboard*/
@@ -452,7 +604,7 @@ input[type="password"] {
 .lista-menu {
     position: relative;
     margin-top: 95px;
-    z-index: 2;
+    z-index: 205;
 
     
 }
@@ -1304,7 +1456,14 @@ input[type="password"] {
     background-color:#2C793D;
     border: none;
     border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
 }
+
+.header-tareas button:hover {
+    background-color: #3c864c;
+}
+
 
 .tareas-grid {
     display: grid;
