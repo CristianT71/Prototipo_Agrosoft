@@ -124,6 +124,12 @@
 
     /*Dahsboard para pantallas pequeñas*/
 
+    
+
+    .contenido-dash {
+       overflow-x: hidden; /*Bloqueamos scroll de forma horizontal*/
+    }
+
     .buscador {
         display: none;
     }
