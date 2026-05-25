@@ -73,8 +73,55 @@
                 </div>
             </header>
 
-            <main class="contenido-dash">
+            <main class="contenido-ntareas">
+                <div class="contenedor-ntareas">
+                    <header class="header-ntareas">
+                        <img src="./assets/images/icons/icono-flecha-izquierda.svg" alt="volver">
+                        <h1>Nueva Tarea</h1>
+                    </header>
+                    <form class="nombre">
+                        <label for="nombre-tarea">Nombre de la tarea *</label>
+                        <input type="text" placeholder="Ej: Aplicar fungicida" required>
+
+                        <label for="descripcion">Descripción (opcional)</label>
+                        <input type="text" placeholder="Agrega notas o instrucciones específicas...">
+
+                        <label for="cultivo">Cultivo *</label>
+                        <select id="cultivo" name="cultivo">
+                            <option value="" disabled selected>Selecciona el cultivo</option>
+                            <option value="tomate_a">Tomate - Lote A</option>
+                            <option value="lechuga_b">Lechuga - Lote B</option>
+                            <option value="pimenton_c">Pimentón - Lote C</option>
+                            <option value="pepino_d">Pepino - Lote D</option>
+                            <option value="todos">Todos los lotes</option>
+                        </select>
+                    </form>
+
+                    <form class="fecha">
+                        <label for="fecha">Fecha</label>
+                        <input type="date">
+
+                        <label for="hora">Hora *</label>
+                        <input type="time">
+
+                    </form>
                 
+                    <form class="prioridad">
+                        <label for="prioridaad">Prioridad</label>
+                        <select name="prioridad" id="prioridad">
+                            <option value="baja">Baja</option>
+                            <option value="media">Media</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                        <p>Las tareas de alta prioridad aparecerán de primero</p>
+                    </form>
+
+                    <div class="recordatorio">
+                        <img src="/assets/images/icons/icono-alerta-circulo.svg" alt="alerta">
+                        <h2>Recordatorios automáticos</h2>
+                        <p>Recibirás una notificación 1 hora antes de la tarea programada</p>
+                    </div>
+                </div>
             </main>
         </div>
     </div>

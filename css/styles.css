@@ -1772,3 +1772,14 @@ input[type="password"] {
     font-size: 14px;
     color: #5A6C5A;
 }
+
+/*###########*/
+/*Estilos crear nueva tarea*/
+
+.contenido-ntareas {
+    margin-top: 63px; /* altura de la barra superior */
+    padding: 20px;
+    min-height: calc(100vh - 63px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
