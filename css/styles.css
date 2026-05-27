@@ -1025,30 +1025,6 @@ input[type="password"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Estilos contenido tareas*/
 .header-tareas {
     display: flex;
@@ -1071,4 +1047,11 @@ input[type="password"] {
     background-color:#2C793D;
     border: none;
     border-radius: 10px;
+}
+
+/*Arrlando a ver si se puede cuadrar lo del*/
+@media (max-width: 1024px) {
+    .segundo-cuadro-reportes {
+        height: auto !important;
+    }
 }

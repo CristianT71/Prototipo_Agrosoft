@@ -340,3 +340,15 @@
     width: 20px;
     height: 20px;
 }
+
+/*Esto es para cuadrar lo del celular*/
+
+@media (max-width: 1024px) {
+    .segundo-cuadro-reportes {
+        height: auto !important;
+    }
+
+    .contenedor-titulo {
+        margin-top: 20px;
+    }
+}

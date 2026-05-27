@@ -2,63 +2,199 @@
 
 /*Pantalla login*/
 @media (min-width: 581px) {
-.tarjeta-login {
-    width: 448px;
-    margin: 50px auto;
-}
+   .tarjeta-login {
+       width: 448px;
+       margin: 50px auto;
+   }
 
-/*Formulario*/
-.formulario-login {
-    width: 395px;
-}
+   .formulario-login {
+       width: 395px;
+   }
 
-.formulario-login .btn-login {
-    display: block;
-    width: 395px;
-    margin-left: -20px;
-}
+   .formulario-login .btn-login {
+       display: block;
+       width: 395px;
+       margin-left: -20px;
+   }
 
-.parte-registro .btn-register {
-    position: relative;
-    top: 10px;
-    width: 395px;
-}
+   .parte-registro .btn-register {
+       position: relative;
+       top: 10px;
+       width: 395px;
+   }
 
-.pie-login {
-    position: relative;
-    top: -155px;
-    text-align: center;
-}
+   .pie-login {
+       position: relative;
+       top: -155px;
+       text-align: center;
+   }
 }
 
 /*Responsive para dashboard*/
 
-/*Pantalla pequeñas*/
-/* Responsive - Pantallas pequeñas */
+/*Pantallas pequeñas*/
 @media (max-width: 1024px) {
-    .icono-cerrar {
+    .boton-hamburguesa{
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
+   .icono-cerrar {
+       display: flex;
+   }
 
-    .icono-cerrar2 {
-        display: none;
-    }
+   .icono-cerrar2 {
+       display: none;
+   }
 
-    .menu-lateral {
-        display: none;
-    }
+   .menu-lateral {
+       position: fixed;
+       left: -100%;
+       top: 0;
+       width: 260px;
+       height: 100%;
+       z-index: 999;
+       transition: left 0.3s ease;
+       display: block;
+   }
 
-    .menu-lateral.activo {
-        display: block;
-    }
+   .menu-lateral.activo {
+       left: 0;
+   }
 
-    .barra-superior {
-        width: 100%;
-        left: 0;
-    }
+   .contenedor-dash {
+       display: flex;
+       flex-direction: column;
+       overflow: visible !important;
+       overflow-y: auto !important;
+   }
 
-    .boton-hamburguesa button{
-        display: flex;
-    }
-    
-}   
+   .contenido-principal {
+       width: 100%;
+       margin-left: 0 !important;
+   }
+
+   .barra-superior {
+       left: 0 !important;
+       width: 100% !important;
+       display: flex !important;
+       flex-direction: row !important;
+       align-items: center !important;
+       justify-content: space-between !important;
+       height: 63px !important;
+   }
+
+   .buscador {
+       flex: 1;
+       width: auto !important;
+   }
+
+   .boton-hamburguesa button {
+       display: flex !important;
+   }
+
+   .contenedor-grip {
+       grid-template-columns: 1fr !important;
+   }
+
+   .segundo-cuadro-reportes {
+       height: auto;
+   }
+
+   .fila-selects {
+       flex-direction: column;
+       gap: 16px;
+   }
+
+   .fila-fechas {
+       flex-direction: column !important;
+       gap: 16px;
+   }
+
+   .botones-filtro-guardar {
+       flex-direction: column;
+       align-items: stretch;
+   }
+
+   .boton-filtro,
+   .boton-generar-reporte {
+       width: 100%;
+       justify-content: center;
+   }
+
+   .contenedor-opciones {
+       width: 100%;
+       justify-content: center;
+   }
+
+   .alerta-item {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 12px;
+   }
+
+   .alerta-item__prioridad {
+       align-self: flex-end;
+   }
+   .input-fecha{
+    width: 100% !important;
+    box-sizing: border-box;
+    display: block;
+    min-height: 42px;
+   }
+   .columna-fecha{
+    width: 100% !important;
+    display: block;
+   }
+}
+
+@media (max-width: 768px) {
+   .barra-superior {
+       position: fixed !important;
+       top: 0 !important;
+       left: 0 !important;
+       width: 100% !important;
+       z-index: 100;
+       box-sizing: border-box;
+   }
+
+   .contenido-dash {
+        margin-top: 0 !important;
+       padding-top: 83px !important;
+   }
+   .titulo-reportes {
+       font-size: 1.5rem;
+   }
+   .columna-fecha {
+       width: 100%;
+   }
+
+   .input-fecha {
+       width: 100%;
+       box-sizing: border-box;
+   }
+}
+
+@media (max-width: 600px) {
+   .valor {
+       font-size: 22px;
+   }
+
+   .reporte-item {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 10px;
+   }
+
+   .reporte-item__descarga {
+       align-self: flex-end;
+   }
+
+   .alerta-titulo {
+       font-size: 0.88rem;
+   }
+
+   .alerta-subtitulo {
+       font-size: 0.75rem;
+   }
+}
