@@ -32,3 +32,20 @@ linksMenu.forEach(link => {
         link.parentElement.classList.remove('activo');
     }
 });
+
+
+//Movimiento en el dashboard
+const tarjetas = document.querySelectorAll('.contenido2-admin');
+
+tarjetas.forEach(tarjeta => {
+    tarjeta.addEventListener('mouseenter', () => {
+        tarjeta.style.transform = 'translateY(-4px)';
+        tarjeta.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.12)';
+        tarjeta.style.transition = 'transform 0.2s ease, box-shadow 0.2s ease';
+    });
+
+    tarjeta.addEventListener('mouseleave', () => {
+        tarjeta.style.transform = 'translateY(0)';
+        tarjeta.style.boxShadow = 'none';
+    });
+});

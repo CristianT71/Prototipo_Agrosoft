@@ -6,6 +6,7 @@
     <title>Agrosoft - Dashboard</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin-css/dashboard-admin.css">
 </head>
 <body id="dashboard">
     <div class="contenedor-dash">
@@ -23,7 +24,6 @@
                     <img src="../assets/images/icons/icono-chevron-izquierda.svg">
                 </div>
             </div>
-
             <nav class="lista-menu">
                 <ul>
                     <li class="activo"><a href="./Dashboard-Admin.html"><img src="../assets/images/icons/icono-inicio.svg"><span>Dashboard Admin</span></a></li>
@@ -59,12 +59,156 @@
                 </div>
                 <div class="iconos-header">
                     <button><img src="../assets/images/icons/icono-campana.svg"></button>
-                    <button>U</button>
+                    <button>A</button>
                 </div>
             </header>
-            <main>
-
+            <main class="main-admin">
+                <div class="contenedor-titulo-admin">
+                    <h1 class="titulo-admin">Panel de administración</h1>
+                </div>
+                <div class="contenedor-subtitulo-admin">
+                    <p class="subtitulo-admin">Gestiona y monitorea toda la plataforma AgroSoft</p>
+                </div>
+                <div class="contenedor2-admin">
+                    <div class="contenido-admin">
+                        <div class="informacion-admin">
+                            <p class="texto">Usuario Totales</p>
+                            <p class="valor">24</p>
+                            <p class="informacion-adicional">+3 este mes</p>
+                        </div>
+                        <div class="imagen imagen-usuario">
+                            <img class="usuario" src="../assets/images/icons/icono-usuarios.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenido-admin">
+                        <div class="informacion-admin">
+                            <p class="texto">Unidades Productivas</p>
+                            <p class="valor">156</p>
+                            <p class="informacion-adicional">+12 este mes</p>
+                        </div>
+                        <div class="imagen imagen-unidades">
+                            <img class="unidades" src="../assets/images/icons/icono-paquete.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenido-admin">
+                        <div class="informacion-admin">
+                            <p class="texto">Incidencias Activas</p>
+                            <p class="valor">8</p>
+                            <p class="informacion-adicional">-2 vs semana pasada</p>
+                        </div>
+                        <div class="imagen imagen-alerta">
+                            <img class="alerta" src="../assets/images/icons/icono-alerta-triangulo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenido-admin">
+                        <div class="informacion-admin">
+                            <p class="texto">Tratamientos Activos</p>
+                            <p class="valor">15</p>
+                            <p class="informacion-adicional">+5 esta semana</p>
+                        </div>
+                        <div class="imagen imagen-jeringa">
+                            <img class="jeringa" src="../assets/images/icons/icono-jeringa.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-acesso-admin">
+                    <p class="acceso-admin">Acceso Rápido</p>
+                </div>
+                <div class="contenedor3-admin">
+                    <div class="contenido2-admin">
+                        <div class="icono-acceso">
+                            <img class="gestion" src="../assets/images/icons/icono-usuarios.svg" alt="Acceso">
+                        </div>
+                        <div class="informacion2-admin">
+                            <a href="../Administrador/Gestion-de-usuarios.html">
+                                <h5 class="texto2">Gestión de Usuarios</h5>
+                                <p class="subtexto2">Administrar usuarios del sistema</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenido2-admin">
+                        <div class="icono-configuracion">
+                            <img class="configuracion" src="../assets/images/icons/icono-configuracion.svg" alt="Configuración">
+                        </div>
+                        <div class="informacion2-admin">
+                            <a href="../Administrador/Configuracion-Sistema.html">
+                                <h5 class="texto2">Configuración del Sistema</h5>
+                                <p class="subtexto2">Ajustes generales de la plataforma</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenido2-admin">
+                        <div class="icono-paquete">
+                            <img class="paquete" src="../assets/images/icons/icono-paquete.svg" alt="Paquete">
+                        </div>
+                        <div class="informacion2-admin">
+                            <a href="../Administrador/unidades-productivas.html">
+                                <h5 class="texto2">Unidades Productivas</h5>
+                                <p class="subtexto2">Ver las unidades productivas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contenido2-admin">
+                        <div class="icono-reportes">
+                            <img class="reporte" src="../assets/images/icons/icono-tendencia-alza.svg" alt="Reportes">
+                        </div>
+                        <div class="informacion2-admin">
+                            <a href="../Administrador/generacion-reportes.html">
+                                <h5 class="texto2">Reportes</h5>
+                                <p class="subtexto2">Generar informes del sistema</p>
+                            </a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="contenedor-actividad-reciente">
+                    <p class="actividad-admin">Actividad Reciente</p>
+                    <a href="historial-actividades.html" class="boton-ver-todo">Ver todo</a>
+                </div>
+                <div class="contenedor-reciente">
+                    <div class="actividad-item">
+                        <div class="actividad-icono">
+                            <img src="../assets/images/icons/icono-usuarios.svg" alt="">
+                        </div>
+                        <div class="actividad-info">
+                            <p class="actividad-texto"><strong>Juan Pérez</strong> Creó nueva unidad productiva</p>
+                            <p class="actividad-tiempo">Hace 5 minutos</p>
+                        </div>
+                        <span class="actividad-tag">Creación</span>
+                    </div>
+                    <div class="actividad-item">
+                        <div class="actividad-icono">
+                            <img src="../assets/images/icons/icono-usuarios.svg" alt="">
+                        </div>
+                        <div class="actividad-info">
+                            <p class="actividad-texto"><strong>María González</strong> Reportó incidencia en Lote A</p>
+                            <p class="actividad-tiempo">Hace 15 minutos</p>
+                        </div>
+                        <span class="actividad-tag">Incidencia</span>
+                    </div>
+                    <div class="actividad-item">
+                        <div class="actividad-icono">
+                            <img src="../assets/images/icons/icono-usuarios.svg" alt="">
+                        </div>
+                        <div class="actividad-info">
+                            <p class="actividad-texto"><strong>Carlos Rodríguez</strong> Aplicó tratamiento fungicida</p>
+                            <p class="actividad-tiempo">Hace 1 hora</p>
+                        </div>
+                        <span class="actividad-tag">Tratamiento</span>
+                    </div>
+                    <div class="actividad-item">
+                        <div class="actividad-icono">
+                            <img src="../assets/images/icons/icono-usuarios.svg" alt="">
+                        </div>
+                        <div class="actividad-info">
+                            <p class="actividad-texto"><strong>Ana López</strong> Registró cosecha de 45kg</p>
+                            <p class="actividad-tiempo">Hace 2 horas</p>
+                        </div>
+                        <span class="actividad-tag">Cosecha</span>
+                    </div>
+                </div>
             </main>
-        <script src="../js/script-admin.js"></script>
+            <script src="../js/script-admin.js"></script>
+        </div>
+    </div>
 </body>
 </html>
