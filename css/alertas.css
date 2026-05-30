@@ -42,24 +42,24 @@
     color: #1a1a1a;
     margin: 0;
 }
-.imagen {
+.imagen{
     border-radius: 8px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagen img {
+.imagen img{
     width: 22px;
     height: 22px;
 }
-.campana {
+.campana{
     background: #fdecea;
 }
-.triangulo {
+.triangulo{
     background: #fff7ed;
 }
-.reloj {
+.reloj{
     background: #eff6ff;
 }
 .campana img {

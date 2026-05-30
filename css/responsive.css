@@ -199,14 +199,96 @@
 
 /*#########################################################################*/
 /*Esta ya hace parte para las pantallas de Admin*/
-@media (max-width: 1024px) {
-    .contenedor3-admin {
+@media (max-width: 1024px){
+    .contenedor3-admin{
         grid-template-columns: repeat(2, 1fr);
+    }
+    /*Pantalla gestion de usuarios*/
+    .contenedor1-gestion{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tabla-header{
+        grid-template-columns: 36px 2fr 2fr 1fr 1fr 1fr;
+    }
+    .fila-tabla{
+        grid-template-columns: 36px 2fr 2fr 1fr 1fr 1fr;
+    }
+    .tabla-header span:nth-child(4),
+    .fila-tabla span:nth-child(4){
+        display: none;
     }
 }
 
-@media (max-width: 600px) {
-    .contenedor3-admin {
+@media (max-width: 768px){
+    .titulo-gestion{
+        font-size: 1.4rem;
+    }
+    .contenedor-filtros-gestion{
+        flex-wrap: wrap;
+    }
+    .buscador-gestion{
+        width: 100%;
+        flex: none;
+    }
+    .menu-desplegable{
+        flex: 1;
+    }
+    .desplegable-seleccionado{
+        min-width: 100%;
+    }
+    /*Pantalla gestion de usuarios*/
+    .tabla-header{
+        grid-template-columns: 36px 2fr 1fr 1fr 1fr;
+    }
+    .fila-tabla{
+        grid-template-columns: 36px 2fr 1fr 1fr 1fr;
+    }
+    .tabla-header span:nth-child(3),
+    .fila-tabla span:nth-child(3){
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor3-admin{
         grid-template-columns: 1fr !important;
+    }
+    /*Pantalla gestion de usuarios*/
+    .contenedor1-gestion{
+        grid-template-columns: 1fr !important;
+    }
+    .contenedor-titulo-gestion{
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+    .titulo-gestion{
+        font-size: 1.2rem;
+    }
+    .btn-nuevo-usuario{
+        width: auto;
+        flex-shrink: 0;
+    }
+    .boton-nuevo span{
+        display: none;
+    }
+    .boton-nuevo{
+        padding: 10px;
+    }
+    .boton-nuevo img{
+        width: 20px;
+        height: 20px;
+    }
+    .tabla-gestion {
+        overflow-x: auto;
+    }
+    .tabla-header {
+        min-width: 600px;
+    }
+    .fila-tabla {
+        min-width: 600px;
+        display: grid;
+        grid-template-columns: 36px 2fr 2fr 1fr 1.2fr 1fr 1.5fr 1fr;
+        gap: 12px;
     }
 }
