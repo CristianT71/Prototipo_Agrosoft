@@ -28,14 +28,13 @@
                 <ul>
                     <li class="activo"><a href="./Dashboard-Admin.html"><img src="../assets/images/icons/icono-inicio.svg"><span>Dashboard Admin</span></a></li>
                     <li><a href="./Gestion-de-usuarios.html"><img src="../assets/images/icons/icono-usuarios.svg"><span>Gestion de Usuarios</span></a></li>
-                    <li><a href="./Configuracion-Sistema.html"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración de Sistema</span></a></li>
+                    <li><a href="./Configuracion-Sistema.html"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración de Sistema</span></a></li>
                 </ul>
             </nav>
             <div class="footer-menu">
                 <ul>
-                    <li><a href="../login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                    <li><a href="../login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
                 </ul>
-
                 <div class="perfil-usuario">
                     <div class="avatar">A</div>
                     <div class="correo-usuario">
@@ -60,26 +59,26 @@
                 </div>
             </header>
             <main class="contenido-dash">
-                <div class="titulo-izquierda">
-                    <img src="../assets/images/icons/icono-flecha-izquierda.svg" alt="Flecha">
-                    <div>
-                        <h1 class="titulo-configuraciones">Configuración del Sistema</h1>
-                        <p class="subtitulo-configuraciones">
-                            Administra los ajustes generales de la plataforma
-                        </p>
+                <div class="contenedor-titulo-gestion">
+                    <div class="titulo-izquierda">
+                        <img src="../assets/images/icons/icono-flecha-izquierda.svg" alt="Flecha">
+                        <div>
+                            <h1 class="titulo-configuraciones">Configuración del Sistema</h1>
+                            <p class="subtitulo-configuraciones">Administra los ajustes generales de la plataforma</p>
+                        </div>
                     </div>
+                    <button class="btn-nuevo-usuario">
+                        <img src="../assets/images/icons/icono-guardar.svg" alt="">
+                        <span>Guardar Cambios</span>
+                    </button>   
                 </div>
-                <button class="btn-nuevo-usuario">
-                    <img src="../assets/images/icons/icono-guardar.svg" alt="">
-                    <span>Guardar Cambios</span>
-                </button>
                 <div class="contenedor-opciones">
                     <button class="opcion General" data-tab="General">General</button>
                     <button class="opcion email" data-tab="Email">Email</button>
                     <button class="opcion seguridad" data-tab="Seguridad">Seguridad</button>
                     <button class="opcion avanzado" data-tab="Avanzado">Avanzado</button>
                 </div>
-                <div class="opcion-contenido General" id="General">
+                <div class="opcion-contenido" id="General">
                     <div class="segundo-cuadro-general">
                         <div class="segundo-cuadro-contenedor">
                             <div class="encabezado-general">
@@ -140,14 +139,127 @@
                         </div>
                     </div>
                 </div>
-                <div class="opcion-contenido Email" id="Email">
+                <div class="opcion-contenido" id="Email">
                     <div class="segundo-cuadro-general">
                         <div class="segundo-cuadro-contenedor">
+                            <div class="encabezado-general">
+                                <img src="../assets/images/icons/icono-correo.svg" alt="">
+                                <h3>Configuración de Email</h3>
+                            </div>
+                            <div class="fila-selects">
+                                <div class="columna-tipo">
+                                    <label for="servidor">Servidor SMTP</label>
+                                    <input type="text" id="servidor" value="smtp.gmail.com">
+                                </div>
+                                <div class="columna-formato">
+                                    <label for="puerto">Puerto SMTP</label>
+                                    <input type="text" id="puerto" value="587">
+                                </div>
+                            </div>
+                            <div class="fila-fechas">
+                                <div class="columna-fecha">
+                                    <label for="usuario-smtp">Usuario SMTP</label>
+                                    <input type="text" id="usuario-smtp">
+                                </div>
+                                <div class="columna-fecha">
+                                    <label for="contrasena-smtp">Contraseña SMTP</label>
+                                    <input type="password" id="contrasena-smtp">
+                                </div>
+                            </div>
+                            <div class="fila-selects">
+                                <div class="columna-tipo">
+                                    <label for="email-remitente">Email remitente</label>
+                                    <input type="text" id="email-remitente" value="noreply@agrosoft.app">
+                                </div>
+                                <div class="columna-formato">
+                                    <label for="nombre-remitente">Nombre remitente</label>
+                                    <input type="text" id="nombre-remitente" value="AgroSoft">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="opcion-contenido Seguridad" id="Seguridad"></div>
-                <div class="opcion-contenido Avanzado" id="Avanzado"></div>
+                <div class="opcion-contenido" id="Seguridad">
+                    <div class="segundo-cuadro-general">
+                        <div class="segundo-cuadro-contenedor">
+                            <div class="encabezado-general">
+                                <img src="../assets/images/icons/icono-escudo.svg" alt="">
+                                <h3>Configuración de Seguridad</h3>
+                            </div>
+                            <div class="fila-selects">
+                                <div class="columna-tipo">
+                                    <label for="longitud">Longitud mínima de contraseña</label>
+                                    <input type="number" id="longitud" value="8" min="0" step="1">
+                                </div>
+                                <div class="columna-formato">
+                                    <label for="maximo">Intentos máximo de inicio de sesión</label>
+                                    <input type="number" id="maximo" value="5" min="0" step="1">
+                                </div>
+                            </div>
+                            <div class="fila-fechas">
+                                <div class="columna-fecha">
+                                    <label for="duracion">Duración de bloqueo (minutos)</label>
+                                    <input type="number" id="duracion" value="15" min="0" step="1">
+                                </div>
+                            </div>
+                            <hr class="separador">
+                            <div class="contenedor-parteFinal">
+                                <div class="info-parteFinal">
+                                    <p>Requerir verificación de email</p>
+                                    <p class="valor">Los usuarios deben verificar su email</p>
+                                </div>
+                                <label class="botones-circulares">
+                                    <input type="checkbox" checked>
+                                    <span class="circular"></span>
+                                </label>
+                            </div>
+                            <div class="contenedor-parteFinal">
+                                <div class="info-parteFinal">
+                                    <p>Autentificación de dos factores</p>
+                                    <p class="valor">Habilitar 2FA para todos los usuarios</p>
+                                </div>
+                                <label class="botones-circulares">
+                                    <input type="checkbox">
+                                    <span class="circular"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcion-contenido" id="Avanzado">
+                    <div class="segundo-cuadro-general">
+                        <div class="segundo-cuadro-contenedor">
+                            <div class="encabezado-general">
+                                <img src="../assets/images/icons/servidor.svg" alt="">
+                                <h3>Configuración Avanzada</h3>
+                            </div>
+                            <div class="contenedor-filas-avanzadas">
+                                <div class="texto-contenedor-avanzado">
+                                    <div class="imagenF">
+                                        <img src="../assets/images/icons/icono-base-datos.svg" alt="">
+                                    </div>
+                                    <div class="texto-avanzado">
+                                        <p>Base de Datos</p>
+                                        <p class="valor">Versión: PostgreSQL 15.0</p>
+                                        <p class="valor">Estado: Conectado</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contenedor-filas-avanzadas">
+                                <div class="texto-contenedor-avanzado">
+                                    <div class="imagenF">
+                                        <img src="../assets/images/icons/servidor.svg" alt="">
+                                    </div>
+                                    <div class="texto-avanzado">
+                                        <p>Servidor</p>
+                                        <p class="valor">Versión: Supabase Edge Funtions</p>
+                                        <p class="valor">Estado: Activo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
 
             </main>
         </div>

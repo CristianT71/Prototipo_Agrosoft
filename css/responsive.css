@@ -255,25 +255,42 @@
     }
     /*Pantalla gestion de usuarios*/
     .contenedor1-gestion{
-        grid-template-columns: 1fr !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .contenido-gestion{
+        padding: 0.75rem 1rem;
+    }
+    .icono-gestion{
+        padding: 8px;
+    }
+    .img-gestion{
+        width: 18px;
+        height: 18px;
     }
     .contenedor-titulo-gestion{
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         gap: 12px;
     }
     .titulo-gestion{
         font-size: 1.2rem;
     }
     .btn-nuevo-usuario{
-        width: auto;
+        width: 44px;
+        height: 44px;
         flex-shrink: 0;
+        border-radius: 50%;
+        padding: 0;
+    }
+    .boton-nuevo{
+        padding: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        justify-content: center;
     }
     .boton-nuevo span{
         display: none;
-    }
-    .boton-nuevo{
-        padding: 10px;
     }
     .boton-nuevo img{
         width: 20px;
@@ -290,5 +307,84 @@
         display: grid;
         grid-template-columns: 36px 2fr 2fr 1fr 1.2fr 1fr 1.5fr 1fr;
         gap: 12px;
+    }
+}
+
+
+/*Configuracion de sistema*/
+@media (max-width: 768px) {
+    .btn-nuevo-usuario {
+        margin-left: 0;
+        margin-top: 0;
+        width: auto;
+    }
+    .titulo-izquierda {
+        flex-wrap: wrap;
+    }
+    .contenedor-opciones {
+        border-radius: 16px;
+        padding: 4px;
+    }
+    .opcion {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+    .fila-selects,
+    .fila-fechas {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .columna-tipo,
+    .columna-formato,
+    .columna-fecha {
+        width: 100%;
+    }
+    .segundo-cuadro-general {
+        margin-top: 16px;
+    }
+    .segundo-cuadro-contenedor {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn-nuevo-usuario {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        padding: 0;
+        border-radius: 10px;
+        flex-shrink: 0;
+        align-self: flex-start;
+    }
+    .btn-nuevo-usuario span {
+        display: none;
+    }
+    .btn-nuevo-usuario img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .opcion {
+        padding: 8px 4px;
+        font-size: 11px;
+    }
+    .contenedor-parteFinal {
+        gap: 12px;
+    }
+    .encabezado-general h3 {
+        font-size: 14px;
+    }
+    .texto-avanzado p {
+        font-size: 13px;
+    }
+    .texto-avanzado .valor {
+        font-size: 12px;
+    }
+    .contenedor-filas-avanzadas {
+        padding: 12px 14px;
     }
 }
