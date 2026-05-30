@@ -1,0 +1,305 @@
+.ventas{
+padding: 80px;
+background: #EEF1EB;
+margin:10px;
+}
+.encabezado-ventas{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 25px;
+}
+.encabezado-ventas h1{
+font-size: 38px;
+margin-bottom: 5px;
+color: #102219;
+}
+.encabezado-ventas p{
+font-size: 16px;
+color: #617067;
+}
+
+.btn-venta{
+background: #2D7A3E;
+color: white;
+border: none;
+border-radius: 14px;
+padding: 12px 18px;
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 16px;
+font-weight: 500;
+cursor: pointer;
+text-decoration: none;
+}
+.btn-venta:hover{
+background-color: #628d6c;
+}
+.btn-venta a{
+color: white;
+text-decoration: none;
+}
+.btn-venta span{
+font-size: 19px;
+}
+
+.cards-ventas{
+display: flex;
+gap: 18px;
+margin-bottom: 25px;
+}
+.card-venta{
+flex: 1;
+background: white;
+border: 1px solid #DDE3DA;
+border-radius: 20px;
+padding: 22px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.card-venta p{
+color: #617067;
+margin-bottom: 8px;
+font-size: 16px;
+}
+.card-venta h2{
+font-size: 32px;
+color: #102219;
+}
+
+.icono-card{
+width: 58px;
+height: 58px;
+border-radius: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 28px;
+font-weight: bold;
+}
+
+.verde{
+background: #E7F3EA;
+color: #16B56F;
+}
+
+.azul{
+background: #E8EEFF;
+color: #3D7DFF;
+}
+.dolar1{
+filter: invert(56%) sepia(51%) saturate(2331%) hue-rotate(125deg) brightness(97%) contrast(88%);
+}
+.tendencia{
+filter: invert(41%) sepia(82%) saturate(2545%) hue-rotate(206deg) brightness(101%) contrast(106%);
+}
+.dolar2{
+filter: invert(39%) sepia(21%) saturate(1512%) hue-rotate(88deg) brightness(95%) contrast(85%);
+}
+
+.buscar{
+width: 50%;
+margin-bottom: 25px;
+position: relative;
+display: flex;
+align-items: center;
+width: 650px;
+height: 30px;
+border-radius: 10px;
+
+}
+
+.buscar-input{
+width: 420px;
+height: 44px;
+background: white;
+border-radius: 14px;
+display: flex;
+align-items: center;
+padding: 0 15px;
+gap: 10px;
+border: 1px solid #DDE3DA;
+
+}
+.buscar-input input{
+width: 100%;
+border: none;
+outline: none;
+background: transparent;
+color: #1a2e1a;
+font-size: 15px;
+}
+.buscar img {
+width: 16px;
+height: 16px;
+margin-right: 10px;
+display: flex;
+position: relative;
+left: 40px;
+}
+
+
+.lista-ventas{
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+.venta-item{
+background: white;
+border: 1px solid #DDE3DA;
+border-radius: 24px;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+.venta-item h3{
+font-size: 24px;
+margin-bottom: 14px;
+color: #102219;
+}
+.venta-item p{
+font-size: 16px;
+margin-bottom: 10px;
+color: #5F6A64;
+}
+.venta-item:hover{
+box-shadow: 0 0 10px -2px rgba(41, 43, 41, 0.4);
+}
+.venta-item span{
+font-size: 15px;
+color: #7D8782;
+}
+.precio{
+color: #16B56F;
+font-size: 32px;
+font-weight: bold;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+    .ventas {
+        padding: 16px 8px;
+        margin: 0;
+        width: 100vw;
+        max-width: 100vw;
+        box-sizing: border-box;
+        
+        margin-top:50px;
+    }
+
+    .encabezado-ventas {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 0 4px;
+    }
+
+    .encabezado-ventas h1 {
+        font-size: 32px;
+        margin-bottom: 2px;
+    }
+
+    .encabezado-ventas p {
+        font-size: 15px;
+    }
+
+    .btn-venta {
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .cards-ventas {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 4px;
+    }
+
+    .card-venta {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 16px 20px;
+        border-radius: 20px;
+    }
+
+    .card-venta p {
+        font-size: 14px;
+    }
+
+    .card-venta h2 {
+        font-size: 32px;
+    }
+
+    .buscar {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto;
+        padding: 0 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .buscar-input {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 44px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .buscar img {
+        position: relative;
+        margin-left:30px;
+    }
+
+    .lista-ventas {
+        padding: 0 4px;
+        gap: 16px;
+    }
+
+    .venta-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box !important;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .venta-item > div:first-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+    }
+
+    .venta-item h3 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+    }
+
+    .venta-item p {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .venta-item span {
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 28px;
+        white-space: nowrap;
+        text-align: right;
+        margin-top: 0;
+        padding-left: 8px;
+    }
+}

@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrosoft - Dashboard</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Agrosoft - Venta</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/venta.css">
+    
+
 </head>
 <body id="dashboard">
     <div class="contenedor-dash">
@@ -26,12 +29,12 @@
 
             <nav class="lista-menu">
                 <ul>
-                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li ><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
-                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li class="activo"><a href="./venta.html"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
                     <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
@@ -73,11 +76,83 @@
                 </div>
             </header>
 
-            <main >
+<main class="ventas">
 
-                    
-            </main>
+    <section class="encabezado-ventas">
+        <div>
+            <h1>Ventas</h1>
+            <p>Gestiona la comercialización de tu producción</p>
         </div>
+        <button class="btn-venta">
+            <a href="./agregar-venta.html"><span>+</span>
+            Registrar Venta
+            </a>
+        </button>
+    </section>
+
+    <section class="cards-ventas">
+        <div class="card-venta">
+            <div>
+                <p>Ingresos este mes</p>
+                <h2>$345k</h2>
+            </div>
+            <div class="icono-card verde"><img class="dolar1" src="/assets/images/icons/icono-signo-dolar.svg"></div>
+        </div>
+
+        <div class="card-venta">
+            <div>
+                <p>Ventas realizadas</p>
+                <h2>3</h2>
+            </div>
+            <div class="icono-card azul"><img class="tendencia" src="/assets/images/icons/icono-tendencia-alza.svg"></div>
+        </div>
+
+        <div class="card-venta">
+            <div>
+                <p>Promedio por venta</p>
+                <h2>$115k</h2>
+            </div >
+            <div class="icono-card verde"><img class="dolar2" src="/assets/images/icons/icono-signo-dolar.svg"></div>
+        </div>
+    </section>
+
+
+    <div class="buscar">
+    <img src="/assets/images/icons/icono-buscar.svg">
+    <input type="text" placeholder="Buscar Ventas...">
+    </div>
+
+    <section class="lista-ventas">
+        <article class="venta-item">
+            <div>
+                <h3>Tomate Cherry - 45 kg</h3>
+                <p>Cliente: Supermercado Central</p>
+                <span>23 Abr 2026</span>
+            </div>
+            <h2 class="precio">$180.000</h2>
+        </article>
+        
+        <article class="venta-item">
+            <div>
+                <h3>Lechuga - 120 unidades</h3>
+                <p>Cliente: Restaurante El Jardín</p>
+                <span>21 Abr 2026</span>
+            </div>
+            <h2 class="precio">$90.000</h2>
+        </article>
+
+        <article class="venta-item">
+        <div>
+        <h3>Pimentón - 30 kg</h3>
+        <p>Cliente: Mercado Local</p>
+        <span>19 Abr 2026</span>
+        </div>
+        <h2 class="precio">$75.000</h2>
+        </article>
+    </section>
+
+</main>
+</div>
     </div>
     <script src="./js/script.js"></script>
 </body>

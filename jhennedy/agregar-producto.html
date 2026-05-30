@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosoft - Agregar-Producto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/agregar-producto.css">    
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li class="activo"><a href="./inventario.html"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+<main class="inventario">
+
+    <section class="header-inventario">
+        <div class="titulo-inventario">
+        <button class="btn-volver">
+        <a href="./inventario.html">  <img  src="/assets/images/icons/icono-flecha-izquierda.svg"></a>
+        </button>
+            <h1>Agregar Producto</h1>
+        </div>
+    </section>
+
+
+    <section class="contenedor-formulario">
+        <div class="tabs-producto">
+            <button class="tab activo">
+                <img src="../assets/images/icons/icono-paquete.svg">
+                <span>Pesticidas</span>
+            </button>
+
+            <button class="tab">
+                <img src="../assets/images/icons/icono-paquete.svg">
+                <span>Abonos</span>
+            </button>
+
+            <button class="tab">
+                <img src="../assets/images/icons/icono-paquete.svg">
+                <span>Herramientas</span>
+            </button>
+        </div>
+
+
+        <form class="form-producto">
+            <div class="card-form">
+                <div class="grupo-input">
+                    <label>Nombre del producto *</label>
+                    <input type="text" placeholder="Ej: Fungicida cúprico">
+                </div>
+
+                <div class="grupo-input">
+                    <label>Categoría *</label>
+                    <select>
+                        <option>Selecciona la categoría</option>
+                        <option>Insecticida</option>
+                        <option>Herbicida</option>
+                        <option>Acaricida</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card-form">
+                <div class="fila-inputs">
+                    <div class="grupo-input">
+                        <label>Cantidad *</label>
+                        <input type="number" placeholder="0">
+                    </div>
+
+                    <div class="grupo-input">
+                        <label>Unidad *</label>
+                        <select>
+                            <option>Unidad</option>
+                            <option>ml</option>
+                            <option>L</option>
+                            <option>g</option>
+                            <option>Kg</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Stock mínimo *</label>
+                    <input type="number" placeholder="0">
+                </div>
+
+                <p class="texto-ayuda">
+                    Recibirás una alerta cuando el stock esté por debajo de este nivel
+                </p>
+            </div>
+
+            <div class="card-form">
+                <div class="grupo-input">
+                    <label>Proveedor (opcional)</label>
+                    <input type="text" placeholder="Nombre del proveedor">
+                </div>
+
+                <div class="fila-inputs">
+                    <div class="grupo-input">
+                        <label>Fecha de compra</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="grupo-input">
+                        <label>Fecha de caducidad</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Notas (opcional)</label>
+                    <textarea placeholder="Información adicional"></textarea>
+                </div>
+            </div>
+
+            <div class="alerta-inventario">
+                <div class="icono-alerta">
+                    <img src="../assets/images/icons/icono-alerta-circulo.svg" style="color:green"> 
+                </div>
+                <div>
+                    <h3 class="titulo-alerta">Gestión de inventario</h3>
+                    <p>
+                        Mantén tu inventario actualizado para recibir alertas oportunas
+                        sobre productos con stock bajo o próximos a vencer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="acciones-form">
+                <button class="btn-agregar">
+                    Agregar producto
+                </button>
+
+                <button class="btn-cancelar" type="button">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+    </section>
+
+</main>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Selecciona todos los select que estén dentro de un .grupo-input
+    document.querySelectorAll('.grupo-input select').forEach(function(elemento) {
+        new TomSelect(elemento, {
+        create: false,
+        controlInput: null
+        });
+    });
+    });
+</script>
+</body>
+</html>

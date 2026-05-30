@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosoft - Inventario</title>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/inventario.css">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+</head>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li ><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li class="activo"><a href="inventario"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+        <main class="contenido">
+
+            <section class="gestion">
+                <div class="arriba">
+                    <div>
+                <h1>Gestión de Inventario</h1>
+                <p>Controla insumos, herramientas y equipos de tus unidades productivas</p>
+                </div>
+                    <button class="btn-agregar">
+                <a href="./agregar-producto.html"><span>+</span>
+                agregar producto
+                </a>
+                </button>
+                </div>
+
+                <div class="cards">
+                <div class="card1">
+                    <div class="pa0">
+                    <p class="pa1">Total Productos</p>
+                    <p class="pa2_1">9</p>
+                    </div>
+                    <div class=icono>
+                    <img class="ic1" src="/assets/images/icons/icono-paquete.svg">
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="pa0">
+                    <p class="pa1">Stock Bajo</p>
+                    <p class="pa2_2">3</p>
+                    </div >
+                    <div class="icono">
+                    <img class="ic2" src="/assets/images/icons/icono-tendencia-baja.svg">
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="pa0">
+                    <p class="pa1">Stock Crítico</p>
+                    <p class="pa2_3">0</p>
+                    </div>
+                    <div class="icono">
+                    <img class="ic3" src="/assets/images/icons/icono-alerta-circulo.svg">
+                    </div>
+                </div>
+
+                <div class="card4">
+                    <div class="pa0">
+                    <p class="pa1">Categorías</p>
+                    <p class="pa2_4">3</p>
+                    </div>
+                    <div class="icono">
+                    <img class="ic4" src="/assets/images/icons/icono-archivo.svg">
+                    </div>
+                </div>
+                </div>
+                </section>
+                
+                <section>
+                    <div class="alertaInventario">
+                        <div class="arribaAlert">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <div class="tituloAlerta">
+                        <h2 class="letra1">Alertas de Inventario</h2>
+                        <p class="letra2">3 productos necesitan reabastecimiento</p>
+                        </div>
+                        </div>
+                        <div class="seccion">
+                            <div class="bajo">
+                                <p>BAJO</p>
+                            <p class="letra">Insecticida orgánico</p>
+                            </div>
+                            <div >
+                            <p>500 / 1000 m</p>
+                            </div>
+                        </div>
+                        
+                        <div class="seccion">
+                            <div class="bajo">
+                                <p>BAJO</p>
+                                <p class="letra">NPK 10-10-10</p>
+                            </div>
+                            <div >
+                            <p>5 / 10 kg</p>
+                            </div>
+                        </div>
+                        <div class="seccion">
+                            <div class="bajo">
+                                <p>BAJO</p>
+                                <p class="letra">Guantes de protección</p>
+                            </div>
+                            <div>
+                            <p>3 / 5 pares</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="buscador">
+                <div class="buscar">
+                <img src="/assets/images/icons/icono-buscar.svg">
+                <input type="text" placeholder="Buscar Productos...">
+                </div>
+                <div>
+                    <select class="select-nativo">
+                    <option value="todas" selected>Todas las categorías</option>
+                    <option value="pesticidas">Pesticidas</option>
+                    <option value="fertilizantes">Fertilizantes</option>
+                    <option value="herramientas">Herramientas</option>
+                    </select>
+                </div>
+                </section>
+                
+                <section>
+                    <div class="pestañas">
+                    <button class="pestaña-activa">Pesticidas</button>
+                    <button class="pestaña">Fertilizantes</button>
+                    <button class="pestaña">Herramientas</button>
+                    </div>
+                </section>
+
+                
+        <section class="inventario">
+        <div class="titulo-inventario">
+        <h2>Pesticidas y Fungicidas</h2>
+        <span>3 productos</span>
+        </div>
+
+        <section class="card-pest">
+        <article class="tarjeta">
+            <div>
+                <div class="titulo-producto">
+                <div>
+                <div class="icono2"><img class="ic" src="../assets/images/icons/icono-paquete.svg" ></div>
+                <div>
+                <h3>Fungicida cúprico</h3>
+                <p>fungicida</p>
+                </div>
+                </div>
+
+                <div class="icono-EE">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash-can"></i>
+                </div>
+                </div>
+
+            </div>
+            <div class="stock">
+                <p>Stock actual</p>
+                <h2>2500 g</h2>
+            </div>
+            <div class="barra-progreso">
+                    <div class="barra1"></div>
+            </div>
+            <div class="porcentaje">
+                <p>Mínimo: 1000 g</p>
+                <p>250%</p>
+            </div>
+            <hr>
+            <div class="actualizacion">
+                <p>Última actualización: 20 Abr 2026</p>
+            </div>
+        </article>
+        
+
+        <article class="tarjeta">
+            <div>
+                <div class="titulo-producto">
+                <div>
+                <div class="icono2"><img class="ic" src="../assets/images/icons/icono-paquete.svg" ></div>
+                <div>
+                <h3>Insecticida orgánico</h3>
+                <p>insecticida</p>
+                </div>
+                </div>
+
+                <div class="icono-EE">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash-can"></i>
+                </div>
+                </div>
+
+            </div>
+            <div class="stock">
+                <p>Stock actual</p>
+                <h2>500 ml</h2>
+            </div>
+            <div class="barra-progreso">
+                    <div class="barra2"></div>
+            </div>
+            <div class="porcentaje">
+                <p>Mínimo: 1000 ml</p>
+                <p>50%</p>
+            </div>
+            <div class="stock-bajo">
+                <img class="icono-alerta" src="/assets/images/icons/icono-alerta-circulo.svg" >
+                <p style="color:#CA3500;">Stock bajo - Reabastecer pronto</p>
+            </div>
+            <hr>
+            <div class="actualizacion">
+                <p>Última actualización: 18 Abr 2026</p>
+            </div>
+        </article>
+
+
+        <article class="tarjeta">
+        <div>
+            <div class="titulo-producto">
+            <div >
+            <div class="icono2"><img class="ic" src="../assets/images/icons/icono-paquete.svg"></div>
+            <div>
+        <h3>Herbicida selectivo</h3>
+        <p>herbicida</p>
+        </div>
+            </div>
+        <div class="icono-EE">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash-can"></i>
+                </div>
+        </div>
+        </div>
+
+        <div class="stock">
+                <p>Stock actual</p>
+                <h2>1200 ml</h2>
+            </div>
+            <div class="barra-progreso">
+                    <div class="barra3"></div>
+            </div>
+            <div class="porcentaje">
+                <p>Mínimo: 500 ml</p>
+                <p>240%</p>
+            </div>
+            <hr>
+            <div class="actualizacion">
+                <p>Última actualización: 22 Abr 2026</p>
+            </div>
+        </article>
+                </section>
+
+                
+
+
+            </main>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Selecciona todos los select que estén dentro de un .grupo-input
+    document.querySelectorAll('.buscador select').forEach(function(elemento) {
+        new TomSelect(elemento, {
+        create: false,
+        controlInput: null
+        });
+    });
+    });
+</script>
+</body>
+</html>
