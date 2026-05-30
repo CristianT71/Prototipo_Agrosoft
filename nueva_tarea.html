@@ -26,14 +26,14 @@
 <!--  -->
             <nav class="lista-menu">
                 <ul>
-                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
-                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li class="activo"><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario-w.svg"> <span>Tareas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
                     <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
@@ -69,15 +69,17 @@
                 </div>
                 <div class="iconos-header">
                     <button><img src="/assets/images/icons/icono-campana.svg"></button>
-                    <button>U</button>
+                    <button type="submit" onclick="window.location.href='./perfil.html'">U</button>
                 </div>
             </header>
 
             <main class="contenido-ntareas">
                 <div class="contenedor-ntareas">
                     <header class="header-ntareas">
+                        <a href="./tareas.html">
                         <img src="./assets/images/icons/icono-flecha-izquierda.svg" alt="volver">
                         <h1>Nueva Tarea</h1>
+                        </a>
                     </header>
                     <form class="nombre">
                         <label for="nombre-tarea">Nombre de la tarea *</label>
@@ -107,7 +109,7 @@
                     </form>
                 
                     <form class="prioridad">
-                        <label for="prioridaad">Prioridad</label>
+                        <label for="prioridad">Prioridad</label>
                         <select name="prioridad" id="prioridad">
                             <option value="baja">Baja</option>
                             <option value="media">Media</option>
@@ -121,6 +123,8 @@
                         <h2>Recordatorios automáticos</h2>
                         <p>Recibirás una notificación 1 hora antes de la tarea programada</p>
                     </div>
+                    <button class="crear-tarea" type="submit" onclick="window.location.href='./tareas.html'">Crear tarea</button>
+                    <button class="cancelar-tarea" type="reset" onclick="window.location.href='./tareas.html'">Cancelar</button>
                 </div>
             </main>
         </div>

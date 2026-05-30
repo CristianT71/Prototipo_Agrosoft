@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosoft - Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+<!--  -->
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button type="submit" onclick="window.location.href='./perfil.html'">U</button>
+                </div>
+            </header>
+
+            <main class="contenido-perfil">
+                <header class="header-perfil">
+                    <h1>Mi Perfil</h1>
+                    <p>Gestiona tu información personal y preferencias</p>
+                </header>
+                <div class="perfil-grid">
+                    <section class="datos-usuario">
+                        <div class="foto-perfil">
+                            <p>U</p>
+                        </div>
+                        <div class="nombre-perfil">
+                            <h2>Usuario</h2>
+                            <p>Usuario</p>
+                            <button><img src="./assets/images/icons/icono-lapiz-cuadrado.svg"> Editar Perfil</button>
+                        </div>
+                        <div class="datos-basicos">
+                            <div class="dato">
+                                <img src="./assets/images/icons/icono-correo.svg">
+                                <p>Email</p>
+                                <b>usuario@gmail.com</b>
+                            </div>
+
+                            <div class="dato">
+                                <img src="./assets/images/icons/icono-telefono.svg">
+                                <p>Teléfono</p>
+                                <b>31000000000</b>
+                            </div>
+
+                            <div class="dato">
+                                <img src="./assets/images/icons/icono-ubicacion.svg">
+                                <p>Ubicación</p>
+                                <b>Valle del Cauca, Colombia</b>
+                            </div>
+
+                            <div class="dato">
+                                <img src="./assets/images/icons/icono-usuario.svg">
+                                <p>Rol</p>
+                                <b>User</b>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tarjetas-perfil">
+                        <a href="#" class="tarjeta-min">
+                            <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono_paquete-v.png">
+                            <p class="numero">8</p>
+                            <span>Unidades Productivas</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="tarjeta-min">
+                            <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono-alerta-triangulo-r.png" alt="">
+                            <p class="numero">3</p>
+                            <span>Incidencias Activas</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="tarjeta-min">
+                        <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono-trigo-v.png" alt="">
+                            <p class="numero">5</p>
+                            <span>Cosechas este mes</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="tarjeta-min">
+                            <div class="tarjeta-icono-texto">
+                            <img src="./assets/images/icons/icono_calendario-a.png" alt="">
+                            <p class="numero">45</p>
+                            <span>Días en la plataforma</span>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="config-cuenta">
+                        <h2>Configuración de cuenta</h2>
+                        <div class="dato-config">
+                            <img src="./assets/images/icons/icono-usuario.svg">
+                            <b>Editar perfil</b>
+                            <p>Actualiza tu información personal</p>
+                        </div>
+                        <div class="dato-config">
+                            <img src="./assets/images/icons/icono-configuracion.svg">
+                            <b>Configuración</b>
+                            <p>Preferencias de la aplicación</p>
+                        </div>
+                        <div class="dato-config">
+                             <img src="./assets/images/icons/icono-campana.svg">
+                             <b>Notificaciones</b>
+                             <p>Gestiona tus alertas</p>
+                        </div>
+                    </section>
+                    <section class="sesion">
+                        <h2>Sesión</h2>
+                        <button type="submit" onclick="window.location.href='./login.html'"><img src="./assets/images/icons/icono-cerrar-sesion.svg" alt="cerrar sesion">Cerrar sesión</button>
+                        <p>AgroSoft v2.0.0</p>
+                    </section>
+
+                    <section class="soporte">
+                        <h2>Soporte y Privacidad</h2>
+                        <div class="dato-soporte">
+                            <img src="./assets/images/icons/icono-informacion.svg">
+                            <b>Centro de ayuda</b>
+                            <p>Preguntas frecuentes y soporte</p>
+                        </div>
+                        <div class="dato-soporte">
+                             <img src="./assets/images/icons/icono-escudo.svg">
+                             <b>Privacidad y seguridad</b>
+                             <p>Protege tu cuenta</p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

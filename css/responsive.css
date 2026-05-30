@@ -219,4 +219,130 @@
         order: 6;
     }
 
+     /*Perfil pantaññas pequeñas*/
+
+     .contenido-perfil {
+        overflow-x: hidden;
+     }
+
+     .perfil-grid {
+        display: flex;
+        flex-direction: column;
+     }
+
+     .tarjetas-perfil {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        z-index: -40;
+     }
+
+     /*tareas pantaññas pequeñas*/
+     .contenido-tareas {
+        overflow-x: hidden;
+     }
+
+     .header-tareas {
+        display: flex;
+        flex-direction: column;
+        gap: -500;
+     }
+
+    .header-tareas p {
+        top: 90px;
+        left: 30px;
+    }
+
+    .header-tareas button {
+        font-size: 10px;
+        width: 70px;
+        height: 30px;
+        left: 325px;
+        top: 30px;
+    }
+
+    .contenido-tareas .tarjeta-min {
+        z-index: -3000;
+    }
+
+    .filtro-tareas {
+        position: relative;
+        left: -220px;
+    }
+
+     .tareas-grid {
+        display: flex;
+        flex-direction: column;
+     }
+
+     .lista-tareas {
+        width: 100%;
+     }
+
+    .tarea-info-principal .prioridad.alta {
+        position: relative;
+        padding: 2px 10px;
+        left: 210px;
+        top: 7px;
+    }
+
+    .tarea-info-principal .prioridad.media {
+        position: relative;
+        left: 210px;
+        top: 7px;
+    }
+
+    .tarea-detalles h3 {
+        font-size: 15px;
+    }
+
+    .tarea-descripcion {
+        font-size: 12px;
+    }
+
+    .tarea-info-principal span {
+        font-size: 10px;
+    }
+
+    .tarea-meta-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        top: -10px;
+        gap: 1px;
+        column-gap: 10px;
+    }
+
+    .tarea-meta-grid .meta-item img {
+        width: 14px;
+    }
+
+    .tarea-meta-grid .meta-item span {
+        font-size: 12px;
+        color: #5A6C5A;
+    }
+
+     /*crear tareas pantaññas pequeñas*/
+     .header-ntareas img,
+     .header-ntareas h2 {
+        position: relative;
+        left: -340px;
+     }
+
+     .contenido-ntareas form,
+     .contenido-ntareas .recordatorio,
+     .contenido-ntareas button
+      {
+        width: 100%;
+     }
+
+    .contenedor-ntareas .recordatorio{
+        position: relative;
+        top: -10px;
+    }
+
+    .contenedor-ntareas .recordatorio p {
+        position: relative;
+        top: 25px;
+        left: -100px;
+    }
 }   
