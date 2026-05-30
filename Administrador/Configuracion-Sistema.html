@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrosoft - Configuración Sistema</title>
+    <title>Agrosoft - Configuración de Sistema</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin-css/configuracion-sistema.css">
 </head>
 <body id="dashboard">
     <div class="contenedor-dash">
@@ -23,7 +24,6 @@
                     <img src="../assets/images/icons/icono-chevron-izquierda.svg">
                 </div>
             </div>
-
             <nav class="lista-menu">
                 <ul>
                     <li class="activo"><a href="./Dashboard-Admin.html"><img src="../assets/images/icons/icono-inicio.svg"><span>Dashboard Admin</span></a></li>
@@ -31,7 +31,6 @@
                     <li><a href="./Configuracion-Sistema.html"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración de Sistema</span></a></li>
                 </ul>
             </nav>
-
             <div class="footer-menu">
                 <ul>
                     <li><a href="../login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
@@ -46,9 +45,7 @@
                 </div>
             </div>
         </aside>
-
         <div class="contenido-principal">
-
             <header class="barra-superior">
                 <div class="boton-hamburguesa">
                     <button>☰</button>
@@ -59,14 +56,102 @@
                 </div>
                 <div class="iconos-header">
                     <button><img src="../assets/images/icons/icono-campana.svg"></button>
-                    <button>U</button>
+                    <button>A</button>
                 </div>
             </header>
             <main class="contenido-dash">
-                <div>
-                    
+                <div class="titulo-izquierda">
+                    <img src="../assets/images/icons/icono-flecha-izquierda.svg" alt="Flecha">
+                    <div>
+                        <h1 class="titulo-configuraciones">Configuración del Sistema</h1>
+                        <p class="subtitulo-configuraciones">
+                            Administra los ajustes generales de la plataforma
+                        </p>
+                    </div>
                 </div>
+                <button class="btn-nuevo-usuario">
+                    <img src="../assets/images/icons/icono-guardar.svg" alt="">
+                    <span>Guardar Cambios</span>
+                </button>
+                <div class="contenedor-opciones">
+                    <button class="opcion General" data-tab="General">General</button>
+                    <button class="opcion email" data-tab="Email">Email</button>
+                    <button class="opcion seguridad" data-tab="Seguridad">Seguridad</button>
+                    <button class="opcion avanzado" data-tab="Avanzado">Avanzado</button>
+                </div>
+                <div class="opcion-contenido General" id="General">
+                    <div class="segundo-cuadro-general">
+                        <div class="segundo-cuadro-contenedor">
+                            <div class="encabezado-general">
+                                <img src="../assets/images/icons/icono-globo.svg" alt="">
+                                <h3>Información General</h3>
+                            </div>
+                            <div class="fila-selects">
+                                <div class="columna-tipo">
+                                    <label for="nombre-sitio">Nombre del sitio</label>
+                                    <input type="text" id="nombre-sitio" value="AgroSoft">
+                                </div>
+                                <div class="columna-formato">
+                                    <label for="url-sitio">URL del sitio</label>
+                                    <input type="text" id="url-sitio" value="https://agrosoft.app">
+                                </div>
+                            </div>
+                            <div class="fila-fechas">
+                                <div class="columna-fecha">
+                                    <label for="tamano">Tamaño máximo de archivo (MB)</label>
+                                    <input type="number" id="tamano" value="5" min="0" step="1">
+                                </div>
+                                <div class="columna-fecha">
+                                    <label for="sesion">Tiempo de sesión (minutos)</label>
+                                    <input type="number" id="sesion" value="30" min="0" step="1">
+                                </div>
+                            </div>
+                            <hr class="separador">
+                            <div class="contenedor-parteFinal">
+                                <div class="info-parteFinal">
+                                    <p>Permitir el registro de usuario</p>
+                                    <p class="valor">Usuarios nuevos se pueden registrar</p>
+                                </div>
+                                <label class="botones-circulares">
+                                    <input type="checkbox" checked>
+                                    <span class="circular"></span>
+                                </label>
+                            </div>
+                            <div class="contenedor-parteFinal">
+                                <div class="info-parteFinal">
+                                    <p>Habilitar notificaciones</p>
+                                    <p class="valor">Sistema de alertas y notificaciones</p>
+                                </div>
+                                <label class="botones-circulares">
+                                    <input type="checkbox" checked>
+                                    <span class="circular"></span>
+                                </label>
+                            </div>
+                            <div class="contenedor-parteFinal">
+                                <div class="info-parteFinal">
+                                    <p>Modo mantenimiento</p>
+                                    <p class="valor">Bloquear el ingreso temporal al sistema</p>
+                                </div>
+                                <label class="botones-circulares">
+                                    <input type="checkbox">
+                                    <span class="circular"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcion-contenido Email" id="Email">
+                    <div class="segundo-cuadro-general">
+                        <div class="segundo-cuadro-contenedor">
+                        </div>
+                    </div>
+                </div>
+                <div class="opcion-contenido Seguridad" id="Seguridad"></div>
+                <div class="opcion-contenido Avanzado" id="Avanzado"></div>
+
             </main>
-        <script src="../js/script-admin.js"></script>
+        </div>
+    </div>
+    <script src="../js/script-admin.js"></script>
 </body>
 </html>

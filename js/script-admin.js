@@ -62,6 +62,7 @@ selects.forEach(select => {
         }
     });
 });
+
 //Despliegue de los menu
 const menusDesplegables = document.querySelectorAll('.menu-desplegable');
 
@@ -86,3 +87,28 @@ menusDesplegables.forEach(menu => {
 document.addEventListener('click', () => {
     menusDesplegables.forEach(m => m.classList.remove('abierto'));
 });
+
+
+
+//Parte de los botones de la pagina configuraciones de sistemas
+const botonesTab = document.querySelectorAll('.opcion');
+const contenidosTab = document.querySelectorAll('.opcion-contenido');
+
+if (botonesTab.length > 0) {
+    const primera = document.querySelector('.opcion.General');
+    const primerContenido = document.getElementById('General');
+    if (primera) primera.classList.add('activo');
+    if (primerContenido) primerContenido.classList.add('activo');
+
+    botonesTab.forEach(boton => {
+        boton.addEventListener('click', () => {
+            botonesTab.forEach(b => b.classList.remove('activo'));
+            contenidosTab.forEach(c => c.classList.remove('activo'));
+
+            boton.classList.add('activo');
+
+            const tab = boton.dataset.tab;
+            document.getElementById(tab)?.classList.add('activo');
+        });
+    });
+}
