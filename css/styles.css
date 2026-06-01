@@ -425,6 +425,7 @@ input[type="password"] {
     z-index: 1;
 }
 
+
 .header-menu {
     position: fixed;
     width: 255px;
@@ -528,6 +529,10 @@ input[type="password"] {
     height: 38px;
     width: 220px;
     top: 0px;
+}
+
+.lista-menu ul li {
+    list-style: none;
 }
 
 .footer-menu ul li a {
@@ -781,7 +786,9 @@ input[type="password"] {
 
 .contenido-dash,
 .contenido-ntareas,
-.contenido-perfil {
+.contenido-perfil,
+.ventas,
+#inventario .contenido {
     margin-top: 63px;
     padding: 20px;
     min-height: calc(100vh - 63px);
@@ -1999,6 +2006,10 @@ input[type="password"] {
     font-size: 16px;
     color: #1a2e1a;
     top: -25px;
+}
+
+.soporte .dato-soporte a {
+    text-decoration: none;
 }
 
 .soporte .dato-soporte p {

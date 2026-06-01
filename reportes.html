@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/reportes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
+                    <li><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="./incidencias.html"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="./cosecha.html"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="./venta.html"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="./inventario.html"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li class="activo"><a href="./reportes.html"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li><a href="./alertas.html"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="./historial.html"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button type="submit" onclick="window.location.href='./perfil.html'">U</button>
+                </div>
+            </header>
+
+            <main class="contenido-dash">
+                <div class="contenedor-titulo">
+                    <h1 class="titulo-reportes">Generción de reportes</h1>
+                </div>
+                <div class="contenedor-parrafo">
+                    <p class="parrafo-reportes">Genera reportes personalizados en diferentes formatos</p>
+                </div>
+                <div class="contenedor-grip">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <p class="texto">Reportes de este mes</p>
+                            <p class="valor">12</p>
+                        </div>
+                        <div class="imagen">
+                            <img src="./assets/images/icons/icono-archivo-texto.svg" alt="Reportes">
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <div class="informacion">
+                            <p class="texto">Formatos disponibles</p>
+                            <p class="valor">3</p>
+                        </div>
+                        <div class="imagen">
+                            <img src="./assets/images/icons/icono-descargar.svg" alt="disponibles">
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <div class="informacion">
+                            <p class="texto">Último generado</p>
+                            <p class="valor">Hoy</p>
+                        </div>
+                        <div class="imagen">
+                            <img src="./assets/images/icons/icono-calendario.svg" alt="calendario">
+                        </div>
+                    </div>
+                </div>
+                <div class="segundo-cuadro-reportes">
+                    <div class="segundo-cuadro-contenedor">
+                        <div class="encabezado-reporte">
+                            <h3>Configurar reporte</h3>
+                        </div>
+                        <div class="fila-selects">
+                            <div class="columna-tipo">
+                                <p class="select-reportes">Tipo de reporte*</p>
+                                <div class="select">
+                                    <button class="select-boton">
+                                        <span class="select-texto">Seleccionar tipo</span>
+                                        <span class="select-flecha">v</span>
+                                    </button>
+                                    <ul class="select-menu">
+                                        <li>Unidades Productivas</li>
+                                        <li>Incidencias</li>
+                                        <li>Tratamientos</li>
+                                        <li>Cosechas</li>
+                                        <li>Ventas</li>
+                                        <li>Inventario</li>
+                                        <li>Historial de Actividades</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="columna-formato">
+                                <p>Formato de Salida*</p>
+                                <div class="select-formato">
+                                    <button class="boton-formato">
+                                        <span class="select-texto2">PDF</span>
+                                        <span class="select-flecha2">v</span>
+                                    </button>
+                                    <ul class="select-menu2">
+                                        <li>PDF</li>
+                                        <li>Excel (.xlsx)</li>
+                                        <li>CSV</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="fila-fechas">
+                            <div class="columna-fecha">
+                                <p>Fecha inicio</p>
+                                <input type="date" class="input-fecha">
+                            </div>
+                            <div class="columna-fecha">
+                                <p>Fecha fin</p>
+                                <input type="date" class="input-fecha">
+                            </div>
+                        </div>
+                        <hr class="separador">
+                            <div class="botones-filtro-guardar">
+                                <button class="boton-filtro">
+                                    <img src="./assets/images/icons/icono-filtro.svg" alt="Filtro">
+                                    <p>Filtros avanzados</p>
+                                </button>
+                                <button class="boton-generar-reporte">
+                                    <img src="./assets/images/icons/icono-descargar.svg" alt="descargar">
+                                    <p>Generar reporte</p>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="tercer-cuadro">
+                    <div class="tercer-cuadro-contenedor">
+                        <div class="encabezado-reportes-recientes">
+                            <h3>Reportes Recientes</h3>
+                        </div>
+                        <div class="reporte-item">
+                            <div class="reporte-item__left">
+                                <img src="./assets/images/icons/icono-archivo-texto.svg" alt="Reporte">
+                                <div class="reporte-item__info">
+                                    <p class="titulo">Reporte de Ventas - Abril 2026</p>
+                                    <p class="subtitulo">Generado hace 1 días</p>
+                                </div>
+                            </div>
+                            <div class="reporte-item__descarga">
+                                <img src="./assets/images/icons/icono-descargar.svg" alt="Descargar">
+                            </div>
+                        </div>
+                        <div class="reporte-item">
+                            <div class="reporte-item__left">
+                                <img src="./assets/images/icons/icono-archivo-texto.svg" alt="Reporte">
+                                <div class="reporte-item__info">
+                                    <p class="titulo">Reporte de Incidencias - Trimestre 1</p>
+                                    <p class="subtitulo">Generado hace 2 días</p>
+                                </div>
+                            </div>
+                            <div class="reporte-item__descarga">
+                                <img src="./assets/images/icons/icono-descargar.svg" alt="Descargar">
+                            </div>
+                        </div>
+                        <div class="reporte-item">
+                            <div class="reporte-item__left">
+                                <img src="./assets/images/icons/icono-archivo-texto.svg" alt="Reporte">
+                                <div class="reporte-item__info">
+                                    <p class="titulo">Reporte de Cosechas - Marzo 2026</p>
+                                    <p class="subtitulo">Generado hace 3 días</p>
+                                </div>
+                            </div>
+                            <div class="reporte-item__descarga">
+                                <img src="./assets/images/icons/icono-descargar.svg" alt="Descargar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

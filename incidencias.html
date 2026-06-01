@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Unidad-Productiva.css">
+    <link rel="stylesheet" href="css/incidencias.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive-j.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Incidencias</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
+                    <li><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li class="activo"><a href="./incidencias.html"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="./cosecha.html"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="./venta.html"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="./inventario.html"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li><a href="./reportes.html"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li><a href="./alertas.html"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="./historial.html"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa"><button>☰</button></div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button type="submit" onclick="window.location.href='./perfil.html'">U</button>
+                </div>
+            </header>
+
+            <main class="inc-contenido">
+
+                <div class="inc-header">
+                    <div class="inc-header-texto">
+                        <h1>Incidencias</h1>
+                        <p>Registra y monitorea problemas en tus unidades productivas</p>
+                    </div>
+                    <button class="btn-nueva-inc" onclick="window.location.href='./nueva_incidencia.html'">
+                        <img src="/assets/images/icons/icono-mas.svg" alt="">
+                        Nueva Incidencia
+                    </button>
+                </div>
+
+                <div class="inc-stats">
+                    <div class="inc-stat">
+                        <div>
+                            <p class="inc-stat-label">Activas</p>
+                            <p class="inc-stat-valor">1</p>
+                        </div>
+                        <div class="inc-stat-icono si-rojo">
+                            <img src="/assets/images/icons/icono-alerta-triangulo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="inc-stat">
+                        <div>
+                            <p class="inc-stat-label">En Tratamiento</p>
+                            <p class="inc-stat-valor">1</p>
+                        </div>
+                        <div class="inc-stat-icono si-azul">
+                            <img src="/assets/images/icons/icono-reloj.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="inc-stat">
+                        <div>
+                            <p class="inc-stat-label">Resueltas</p>
+                            <p class="inc-stat-valor">1</p>
+                        </div>
+                        <div class="inc-stat-icono si-verde">
+                            <img src="/assets/images/icons/icono-check-circulo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filtros -->
+                <div class="inc-filtros">
+
+                    <!-- Buscador -->
+                    <div class="inc-buscador">
+                        <img src="/assets/images/icons/icono-buscar.svg" alt="">
+                        <input type="text" placeholder="Buscar incidencias..." id="inputBuscarInc" oninput="filtrarIncidencias()">
+                    </div>
+
+                    <!-- Select Estados -->
+                    <div class="inc-select-wrap" id="wrapEstado">
+                        <div class="inc-select-custom" onclick="toggleSelectInc('opcionesEstado', event)">
+                            <span id="textoEstado">Todos los estados</span>
+                            <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="inc-chevron">
+                        </div>
+                        <div class="inc-select-opciones" id="opcionesEstado">
+                            <div class="inc-opcion inc-opcion-activa" onclick="seleccionarInc('opcionesEstado', 'textoEstado', 'estadoVal', this, '', event)">Todos los estados</div>
+                            <div class="inc-opcion" onclick="seleccionarInc('opcionesEstado', 'textoEstado', 'estadoVal', this, 'activa', event)">Activa</div>
+                            <div class="inc-opcion" onclick="seleccionarInc('opcionesEstado', 'textoEstado', 'estadoVal', this, 'tratamiento', event)">En Tratamiento</div>
+                            <div class="inc-opcion" onclick="seleccionarInc('opcionesEstado', 'textoEstado', 'estadoVal', this, 'resuelta', event)">Resuelta</div>
+                        </div>
+                        <input type="hidden" id="estadoVal">
+                    </div>
+
+                    <!-- Select Severidades -->
+                    <div class="inc-select-wrap" id="wrapSeveridad">
+                        <div class="inc-select-custom" onclick="toggleSelectInc('opcionesSeveridad', event)">
+                            <span id="textoSeveridad">Todas las severidades</span>
+                            <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="inc-chevron">
+                        </div>
+                        <div class="inc-select-opciones" id="opcionesSeveridad">
+                            <div class="inc-opcion inc-opcion-activa" onclick="seleccionarInc('opcionesSeveridad', 'textoSeveridad', 'severidadVal', this, '', event)">Todas las severidades</div>
+                            <div class="inc-opcion" onclick="seleccionarInc('opcionesSeveridad', 'textoSeveridad', 'severidadVal', this, 'alta', event)">Alta</div>
+                            <div class="inc-opcion" onclick="seleccionarInc('opcionesSeveridad', 'textoSeveridad', 'severidadVal', this, 'media', event)">Media</div>
+                            <div class="inc-opcion" onclick="seleccionarInc('opcionesSeveridad', 'textoSeveridad', 'severidadVal', this, 'baja', event)">Baja</div>
+                        </div>
+                        <input type="hidden" id="severidadVal">
+                    </div>
+
+                </div>
+
+                <div class="inc-lista" id="listaIncidencias">
+
+                    <div class="inc-card" data-estado="activa" data-severidad="media" onclick="verDetalleInc()">
+                        <img src="/assets/images/icons/icono-alerta-triangulo.svg" alt="" class="inc-icono-alerta">
+                        <div class="inc-body">
+                            <p class="inc-titulo">Manchas amarillas en hojas</p>
+                            <p class="inc-desc">Se detectaron manchas amarillas en aproximadamente 30% de las plantas</p>
+                            <div class="inc-meta">
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-ubicacion.svg" alt=""> Tomate Cherry - Lote A</span>
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-calendario.svg" alt=""> 22 Abr 2026</span>
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-camara.svg" alt=""> Con evidencias</span>
+                            </div>
+                        </div>
+                        <div class="inc-badges">
+                            <span class="badge badge-activa"><img src="/assets/images/icons/icono-alerta-triangulo.svg" alt=""> Activa</span>
+                            <span class="badge badge-media">Media</span>
+                        </div>
+                    </div>
+
+                    <div class="inc-card" data-estado="tratamiento" data-severidad="alta" onclick="verDetalleInc()">
+                        <img src="/assets/images/icons/icono-alerta-triangulo.svg" alt="" class="inc-icono-alerta">
+                        <div class="inc-body">
+                            <p class="inc-titulo">Plagas de pulgón detectadas</p>
+                            <p class="inc-desc">Presencia significativa de pulgones en zona norte del cultivo</p>
+                            <div class="inc-meta">
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-ubicacion.svg" alt=""> Lechuga Crespa - Lote B</span>
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-calendario.svg" alt=""> 21 Abr 2026</span>
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-camara.svg" alt=""> Con evidencias</span>
+                            </div>
+                        </div>
+                        <div class="inc-badges">
+                            <span class="badge badge-tratamiento"><img src="/assets/images/icons/icono-reloj.svg" alt=""> En Tratamiento</span>
+                            <span class="badge badge-alta">Alta</span>
+                        </div>
+                    </div>
+
+                    <div class="inc-card" data-estado="resuelta" data-severidad="baja" onclick="verDetalleInc()">
+                        <img src="/assets/images/icons/icono-alerta-triangulo.svg" alt="" class="inc-icono-alerta">
+                        <div class="inc-body">
+                            <p class="inc-titulo">Deficiencia de nutrientes</p>
+                            <p class="inc-desc">Síntomas de deficiencia de nitrógeno en plantas jóvenes</p>
+                            <div class="inc-meta">
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-ubicacion.svg" alt=""> Pimentón - Invernadero 1</span>
+                                <span class="inc-meta-item"><img src="/assets/images/icons/icono-calendario.svg" alt=""> 18 Abr 2026</span>
+                            </div>
+                        </div>
+                        <div class="inc-badges">
+                            <span class="badge badge-resuelta"><img src="/assets/images/icons/icono-check-circulo.svg" alt=""> Resuelta</span>
+                            <span class="badge badge-baja">Baja</span>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./Js/script.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

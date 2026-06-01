@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosoft - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin-css/gestion-de-usuarios.css">
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="../assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="../assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="../assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./Dashboard-Admin.html"><img src="../assets/images/icons/icono-inicio.svg"><span>Dashboard Admin</span></a></li>
+                    <li><a href="./Gestion-de-usuarios.html"><img src="../assets/images/icons/icono-usuarios.svg"><span>Gestion de Usuarios</span></a></li>
+                    <li><a href="./Configuracion-Sistema.html"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración de Sistema</span></a></li>
+                </ul>
+            </nav>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">A</div>
+                    <div class="correo-usuario">
+                        <span>admin@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="../assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="../assets/images/icons/icono-campana.svg"></button>
+                    <button>A</button>
+                </div>
+            </header>
+            <main class="main-admin">
+                <div class="contenedor-titulo-gestion">
+                    <div class="titulo-izquierda">
+                        <img src="../assets/images/icons/icono-flecha-izquierda.svg" alt="Flecha">
+                        <div>
+                            <h1 class="titulo-gestion">Gestión de Usuarios</h1>
+                            <p class="subtitulo-gestion">Administra todos los usuarios de la plataforma</p>
+                        </div>
+                    </div>
+                    <button class="btn-nuevo-usuario">
+                        <a class="boton-nuevo" href="./Dashboard-Admin.html">
+                            <img src="../assets/images/icons/icono-usuario-mas.svg" alt="">
+                            <span>Nuevo Usuario</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="contenedor1-gestion">
+                    <div class="contenido-gestion">
+                        <div class="informacion-gestion">
+                            <h5 class="texto-gestion">Total Usuarios</h5>
+                            <p class="valor valor-azul">4</p>
+                        </div>
+                        <div class="icono-gestion fondo-azul">
+                            <img class="img-gestion img-azul" src="../assets/images/icons/icono-usuario.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenido-gestion">
+                        <div class="informacion-gestion">
+                            <h5 class="texto-gestion">Activos</h5>
+                            <p class="valor valor-verde">3</p>
+                        </div>
+                        <div class="icono-gestion fondo-verde">
+                            <img class="img-gestion img-verde" src="../assets/images/icons/icono-usuario.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenido-gestion">
+                        <div class="informacion-gestion">
+                            <h5 class="texto-gestion">Inactivos</h5>
+                            <p class="valor valor-gris">1</p>
+                        </div>
+                        <div class="icono-gestion fondo-gris">
+                            <img class="img-gestion img-gris" src="../assets/images/icons/icono-usuario.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenido-gestion">
+                        <div class="informacion-gestion">
+                            <h5 class="texto-gestion">Administradores</h5>
+                            <p class="valor valor-naranja">1</p>
+                        </div>
+                        <div class="icono-gestion fondo-naranja">
+                            <img class="img-gestion img-naranja" src="../assets/images/icons/icono-escudo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-filtros-gestion">
+                    <div class="buscador-gestion">
+                        <img src="../assets/images/icons/icono-buscar.svg" alt="">
+                        <input type="text" placeholder="Buscar usuarios...">
+                    </div>
+                    <div class="menu-desplegable">
+                        <div class="desplegable-seleccionado">
+                            <span>Todos los roles</span>
+                            <img src="../assets/images/icons/icono-chevron-izquierda.svg" class="desplegable-flecha">
+                        </div>
+                        <div class="desplegable-menu">
+                            <div class="desplegable-item desplegable-activo">Todos los roles</div>
+                            <div class="desplegable-item">Administrador</div>
+                            <div class="desplegable-item">Usuario</div>
+                        </div>
+                    </div>
+                    <div class="menu-desplegable">
+                        <div class="desplegable-seleccionado">
+                            <span>Todos los estados</span>
+                            <img src="../assets/images/icons/icono-chevron-izquierda.svg" class="desplegable-flecha">
+                        </div>
+                        <div class="desplegable-menu">
+                            <div class="desplegable-item desplegable-activo">Todos los estados</div>
+                            <div class="desplegable-item">Activo</div>
+                            <div class="desplegable-item">Inactivo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabla-gestion">
+                    <div class="tabla-header">
+                        <span>Usuario</span>
+                        <span>Email</span>
+                        <span>Teléfono</span>
+                        <span>Rol</span>
+                        <span>Estado</span>
+                        <span>Último acceso</span>
+                        <span>Acciones</span>
+                    </div>
+                    <div class="fila-tabla">
+                        <div class="usuario-avatar-tabla">MAV</div>
+                        <div class="actividad-info">
+                            <p class="subtitulo-tabla"><strong>Manuel Alejandro Vargas</strong></p>
+                            <p class="texto-gestion">Desde 15 Ene 2026</p>
+                        </div>
+                        <span>Manuel@example.com</span>
+                        <span>+57 300 1234567</span>
+                        <span class="rol admin">Administrador</span>
+                        <span class="estado activo">Activo</span>
+                        <span>Hace 5 minutos</span>
+                        <div class="acciones-tabla">
+                            <button class="btn-editar-tabla"><img src="../assets/images/icons/icono-lapiz-cuadrado.svg" alt=""></button>
+                            <button class="btn-eliminar-tabla"><img src="../assets/images/icons/icono-papelera.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="fila-tabla">
+                        <div class="usuario-avatar-tabla">JM</div>
+                        <div class="actividad-info">
+                            <p class="subtitulo-tabla"><strong>Jhennedy Murcia</strong></p>
+                            <p class="texto-gestion">Desde 10 Ene 2026</p>
+                        </div>
+                        <span>Jhennedy@example.com</span>
+                        <span>+57 300 2345678</span>
+                        <span class="rol usuario">Usuario</span>
+                        <span class="estado activo">Activo</span>
+                        <span>Hace 1 hora</span>
+                        <div class="acciones-tabla">
+                            <button class="btn-editar-tabla"><img src="../assets/images/icons/icono-lapiz-cuadrado.svg" alt=""></button>
+                            <button class="btn-eliminar-tabla"><img src="../assets/images/icons/icono-papelera.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="fila-tabla">
+                        <div class="usuario-avatar-tabla">JP</div>
+                        <div class="actividad-info">
+                            <p class="subtitulo-tabla"><strong>Juan Permdomo</strong></p>
+                            <p class="texto-gestion">Desde 5 Ene 2026</p>
+                        </div>
+                        <span>Juan@example.com</span>
+                        <span>+57 300 3456789</span>
+                        <span class="rol usuario">Usuario</span>
+                        <span class="estado activo">Activo</span>
+                        <span>Hace 2 horas</span>
+                        <div class="acciones-tabla">
+                            <button class="btn-editar-tabla"><img src="../assets/images/icons/icono-lapiz-cuadrado.svg" alt=""></button>
+                            <button class="btn-eliminar-tabla"><img src="../assets/images/icons/icono-papelera.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="fila-tabla">
+                        <div class="usuario-avatar-tabla">SO</div>
+                        <div class="actividad-info">
+                            <p class="subtitulo-tabla"><strong>Sergio Osorio</strong></p>
+                            <p class="texto-gestion">Desde 1 Ene 2026</p>
+                        </div>
+                        <span>sercgoos@gmail.com</span>
+                        <span>+57 300 4567890</span>
+                        <span class="rol usuario">Usuario</span>
+                        <span class="estado inactivo">Inactivo</span>
+                        <span>Hace 5 días</span>
+                        <div class="acciones-tabla">
+                            <button class="btn-editar-tabla"><img src="../assets/images/icons/icono-lapiz-cuadrado.svg" alt=""></button>
+                            <button class="btn-eliminar-tabla"><img src="../assets/images/icons/icono-papelera.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="fila-tabla">
+                        <div class="usuario-avatar-tabla">CT</div>
+                        <div class="actividad-info">
+                            <p class="subtitulo-tabla"><strong>Cristian Trujillo</strong></p>
+                            <p class="texto-gestion">Desde 1 Ene 2026</p>
+                        </div>
+                        <span>Cristian@gmail.com</span>
+                        <span>+57 300 4567890</span>
+                        <span class="rol usuario">Usuario</span>
+                        <span class="estado inactivo">Inactivo</span>
+                        <span>Hace 10 días</span>
+                        <div class="acciones-tabla">
+                            <button class="btn-editar-tabla"><img src="../assets/images/icons/icono-lapiz-cuadrado.svg" alt=""></button>
+                            <button class="btn-eliminar-tabla"><img src="../assets/images/icons/icono-papelera.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="fila-tabla">
+                        <div class="usuario-avatar-tabla">CP</div>
+                        <div class="actividad-info">
+                            <p class="subtitulo-tabla"><strong>Cesar Palma</strong></p>
+                            <p class="texto-gestion">Desde 1 Ene 2026</p>
+                        </div>
+                        <span>Cesar@gmail.com</span>
+                        <span>+57 300 4567890</span>
+                        <span class="rol usuario">Usuario</span>
+                        <span class="estado inactivo">Inactivo</span>
+                        <span>Hace 3 días</span>
+                        <div class="acciones-tabla">
+                            <button class="btn-editar-tabla"><img src="../assets/images/icons/icono-lapiz-cuadrado.svg" alt=""></button>
+                            <button class="btn-eliminar-tabla"><img src="../assets/images/icons/icono-papelera.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="../js/script-admin.js"></script>
+</body>
+</html>

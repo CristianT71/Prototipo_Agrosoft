@@ -1,0 +1,364 @@
+.contenedor-titulo{
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+.titulo-reportes{
+    text-align: left;
+}
+.contenedor-parrafo{
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+.parrafo-reportes{
+    text-align: left;
+    color: rgba(0, 0, 0, 0.622);
+}
+.contenedor-grip{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+    width: 100%;
+}
+.contenido{
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.texto{
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 6px 0;
+}
+.valor{
+    font-size: 28px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+.imagen{
+    background: #e8f5e9;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen img{
+    width: 22px;
+    height: 22px;
+}
+
+/*Cuadro grande*/
+.segundo-cuadro-reportes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    width: 100%;
+    height: 345px;
+}
+.segundo-cuadro-contenedor {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado-reporte {
+    margin-bottom: 25px;
+}
+.fila-selects {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.columna-tipo {
+    flex: 1;
+}
+.columna-formato {
+    flex: 1;
+}
+.fila-fechas {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.columna-fecha {
+    flex: 1;
+}
+.contenedor-texto{
+    margin-top: 30px;
+}
+
+
+/*Esto es lo de seleccionar de Seleccionar tipos*/
+.select {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+}
+.select-boton {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+.select-boton:focus{
+    border-color: #3a7d44;
+    box-shadow: 0 0 0 2px rgba(58, 125, 68, 0.2);
+}
+.select-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    list-style: none;/*Elimina las viñetas que se presenta*/
+    padding: 8px 0;
+    margin: 0;
+    display: none;
+    z-index: 100;
+}
+.select-reporte{
+    margin: 0;
+}
+.select-menu li {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+.select-menu li:hover {
+    background: #f5f5f5;
+}
+.select.abierto .select-menu {
+    display: block;
+}
+.select.abierto .select-flecha {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+/*Esto es lo de seleccionar de Tipos de salida*/
+.informacion-formato{
+    margin-top: 53px;
+}
+.select-formato {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.boton-formato {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+}
+.boton-formato:focus{
+    border-color: #3a7d44;
+    box-shadow: 0 0 0 2px rgba(58, 125, 68, 0.2);
+}
+.select-menu2 {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    display: none;
+    z-index: 100;
+}
+.select-menu2 li {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+.select-menu2 li:hover {
+    background: #f5f5f5;
+}
+.select-formato.abierto .select-menu2 {
+    display: block;
+}
+.select-formato.abierto .select-flecha2 {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+/*Fecha*/
+.fecha-inicio{
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+}
+.input-fecha {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+}
+.input-fecha:focus {
+    border-color: #3a7d44;
+    box-shadow: 0 0 0 2px rgba(58, 125, 68, 0.2);
+}
+
+/*Segunda parte del segundo cuadro*/
+.separador{
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 40px 0 20px 0;
+}
+.botones-filtro-guardar{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+}
+.boton-filtro{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.boton-generar-reporte{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #3a7d44;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/*Cuadro final. Cuadro 3*/
+.tercer-cuadro {
+    margin-top: 30px;
+    width: 100%;
+}
+.tercer-cuadro-contenedor {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.encabezado-reportes-recientes h3 {
+    margin-bottom: 8px;
+}
+.reporte-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.2s;/*es para el cambio de color del fondo suavemente*/
+}
+.reporte-item:hover {
+    background: #f5f5f5;
+}
+.reporte-item__left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.reporte-item__left img {
+    width: 22px;
+    height: 22px;
+
+}
+.reporte-item__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.reporte-item__info .titulo {
+    font-weight: 600; /*Controla el valor de la fuente*/
+    font-size: 0.95rem;
+    color: #222;
+    margin: 0;
+}
+.reporte-item__info .subtitulo {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+.reporte-item__descarga {
+    color: #555;
+}
+.reporte-item__descarga img {
+    width: 20px;
+    height: 20px;
+}
+
+/*Esto es para cuadrar lo del celular*/
+
+@media (max-width: 1024px) {
+
+    .contenedor-grip .contenido{
+        display: grid;
+}
+
+    .columna-fecha input{
+        background-color: #ffffff;
+        width: 150px;
+    }
+
+    .segundo-cuadro-reportes {
+        height: auto !important;
+    }
+
+    .contenedor-titulo {
+        margin-top: 20px;
+    }
+}

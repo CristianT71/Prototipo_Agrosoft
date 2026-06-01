@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosoft - Nueva Incidencia</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/nueva_incidencia.css">
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="./assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="./assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="./assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="./assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
+                    <li><a href="./Unidades-Productivas.html"><img src="./assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li class="activo"><a href="#"><img src="./assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href=""><img src="./assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="./cosecha.html"><img src="./assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="./tareas.html"><img src="./assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="./inventario.html"><img src="./assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="./assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="./reportes.html"><img src="./assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="./alertas.html"><img src="./assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="./historial.html"><img src="./assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="./assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="./assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="./assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="./assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <main class="contenido-dash">
+                <div class="header-retorno">
+                    <button class="btn-atras" onclick="window.history.back();">←</button>
+                    <div>
+                        <h1>Nueva Incidencia</h1>
+                        <p>Registra un problema o anomalía detectada</p>
+                    </div>
+                </div>
+
+                <div class="contenedor-formulario">
+                    <form action="#" method="POST">
+                        <div class="grid-formulario">
+                            <div class="grupo-input">
+                                <label for="titulo">Título de la incidencia *</label>
+                                <input type="text" id="titulo" placeholder="Ej: Manchas amarillas en hojas" required>
+                            </div>
+
+                            <div class="grupo-input">
+                                <label for="unidad">Unidad Productiva *</label>
+                                <select id="unidad" required>
+                                    <option value="" disabled selected>Seleccionar unidad</option>
+                                    </select>
+                            </div>
+
+                            <div class="grupo-input">
+                                <label for="severidad">Severidad *</label>
+                                <select id="severidad" required>
+                                    <option value="" disabled selected>Seleccionar severidad</option>
+                                    <option value="baja">Baja</option>
+                                    <option value="media">Media</option>
+                                    <option value="alta">Alta</option>
+                                </select>
+                            </div>
+
+                            <div class="grupo-input">
+                                <label for="fecha">Fecha observada *</label>
+                                <input type="text" id="fecha" value="31/05/2026" required>
+                            </div>
+                        </div>
+
+                        <div class="grupo-input ancho-completo">
+                            <label for="descripcion">Descripción detallada *</label>
+                            <textarea id="descripcion" rows="4" placeholder="Describe los síntomas, localización, extensión del problema..." required></textarea>
+                        </div>
+
+                        <div class="grupo-input ancho-completo">
+                            <label>Evidencia fotográfica</label>
+                            <div class="zona-carga" id="dropzone">
+                                <div class="icono-camara">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2e6f40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                                </div>
+                                <h3>Cargar evidencia fotográfica</h3>
+                                <p>Máximo 5 fotos, 5MB cada una</p>
+                                <input type="file" id="input-archivo" multiple accept="image/*" style="display: none;">
+                            </div>
+                        </div>
+
+                        <div class="acciones-formulario">
+                            <button type="button" class="btn-cancelar" onclick="window.history.back();">Cancelar</button>
+                            <button type="submit" class="btn-registrar-incidencia">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                                Registrar Incidencia
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

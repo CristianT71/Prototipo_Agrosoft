@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/alertas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio.svg"><span>Dashboard</span></a></li>
+                    <li><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="./incidencias.html"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="./cosecha.html"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="./venta.html"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="./inventario.html"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="./tareas.html"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li><a href="reportes.html"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li class="activo"><a href="alertas.html"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="./historial.html"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button type="submit" onclick="window.location.href='./perfil.html'">U</button>
+                </div>
+            </header>
+            <main class="contenido-dash">
+                <div class="contenedor-titulo-alertas">
+                    <h1 class="titulo-alertas">Centro de alertas</h1>
+                </div>
+                <div class="contenedor-parrafo">
+                    <p class="parrafo-reportes">Monitorea eventos importantes del sistema</p>
+                </div>
+                <div class="contenedor-grip">
+                    <div class="contenido">
+                        <div class="informacion">
+                            <p class="texto">Alertas activas</p>
+                            <p class="valor">3</p>
+                        </div>
+                        <div class="imagen campana">
+                            <img src="./assets/images/icons/icono-campana.svg" alt="Reportes">
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <div class="informacion">
+                            <p class="texto">Prioridad alta</p>
+                            <p class="valor">2</p>
+                        </div>
+                        <div class="imagen triangulo">
+                            <img src="./assets/images/icons/icono-alerta-triangulo.svg" alt="disponibles">
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <div class="informacion">
+                            <p class="texto">Esta semana</p>
+                            <p class="valor">2</p>
+                        </div>
+                        <div class="imagen reloj">
+                            <img src="./assets/images/icons/icono-reloj.svg" alt="calendario">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-opciones">
+                    <button class="opcion activo" data-tab="activas">Activas (3)</button>
+                    <button class="opcion" data-tab="resueltas">Resueltas</button>
+                </div>
+                <div class="opcion-contenido activo" id="activas">
+                <div class="contenedor-alertas-recientes">
+                    <div class="alerta-item">
+                        <a href="./dashboard.html" class="link">
+                            <div class="alerta-item__izquierda">
+                                <div class="alerta-icono triangulo">
+                                    <img src="./assets/images/icons/icono-alerta-triangulo-w.svg" alt="">
+                                </div>
+                                <div class="alerta-item__info">
+                                    <h4 class="alerta-titulo">Incidencia activa requiere atención</h4>
+                                    <p class="alerta-subtitulo">La incidencia "Manchas amarillas en las hojas" esta activa desde hace 3 dias</p>
+                                    <p class="alerta-fecha">22 Abr 2026</p>
+                                </div>
+                            </div>
+                            <div class="alerta-item__prioridad">
+                                <span class="badge alta">ALTA</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="alerta-item">
+                        <a href="./dashboard.html" class="link">
+                            <div class="alerta-item__izquierda">
+                                <div class="alerta-icono reloj">
+                                    <img src="./assets/images/icons/icono-reloj.svg" alt="">
+                                </div>
+                                <div class="alerta-item__info">
+                                    <h4 class="alerta-titulo">Tratamiento próximo a vencer</h4>
+                                    <p class="alerta-subtitulo">El tratamiento "Insecticida de contacto" vence en 1 dia</p>
+                                    <p class="alerta-fecha">23 Abr 2026</p>
+                                </div>
+                            </div>
+                            <div class="alerta-item__prioridad">
+                                <span class="badge alta">ALTA</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="alerta-item">
+                        <a href="./inventario.html" class="link">
+                            <div class="alerta-item__izquierda">
+                                <div class="alerta-icono inventario">
+                                    <img src="./assets/images/icons/icono-archivo.svg" alt="">
+                                </div>
+                                <div class="alerta-item__info">
+                                        <h4 class="alerta-titulo">Inventario bajo</h4>
+                                        <p class="alerta-subtitulo">El Stock de "Fertilizante NPK" está por debajo del mínimo</p>
+                                        <p class="alerta-fecha">21 Abr 2026</p>
+                                </div>
+                            </div>
+                            <div class="alerta-item__prioridad">
+                                <span class="badge media">MEDIA</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="opcion-contenido" id="resueltas">
+                <div class="sin-alertas">
+                    <div class="sin-alertas__icono">
+                        <img src="./assets/images/icons/icono-check-circulo.svg" alt="">
+                    </div>
+                        <p class="sin-alertas__texto">No hay alertas resueltas recientes</p>
+                </div>
+            </div>
+            </main>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

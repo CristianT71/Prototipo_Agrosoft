@@ -1,0 +1,109 @@
+/* ============================================================
+CSS - Responsive AgroSoft
+Archivo: csss/responsive.css
+Importar en TODOS los HTML después de los demás CSS
+   ============================================================ */
+
+/* ============================================================
+PANTALLAS GRANDES (1440px en adelante)
+   ============================================================ */
+@media (min-width: 1440px) {
+
+    /* Menú */
+    .menu-lateral { width: 270px; min-width: 270px; }
+    .header-menu { width: 270px; }
+    .perfil-usuario { width: 270px; }
+    .contenido-principal { margin-left: 270px; }
+    .barra-superior { left: 270px; width: calc(100% - 270px); }
+    .buscador { width: 750px; }
+
+    /* Unidades Productivas */
+   
+    .up-contenido, .nu-contenido, .du-contenido { padding: 90px 40px 40px 40px; }
+    .up-stats-grid { gap: 18px; }
+    .up-cards-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .up-stat-valor { font-size: 32px; }
+
+    /* Incidencias */
+    .inc-contenido { padding: 90px 40px 40px 40px; }
+    .inc-stats { gap: 18px; }
+    .inc-buscador { max-width: 480px; }
+
+    /* Nuevo Tratamiento */
+    .nt-contenido { padding: 90px 40px 40px 40px; }
+    .nt-card { padding: 36px; }
+}
+
+/* ============================================================
+MÓVILES (máximo 430px)
+   ============================================================ */
+@media (max-width: 430px) {
+
+    /* Menú oculto, se abre con hamburguesa */
+    .menu-lateral { position: fixed; left: -255px; width: 255px; z-index: 100; transition: left 0.3s ease; }
+    .menu-lateral.abierto { left: 0; box-shadow: 4px 0 20px rgba(0,0,0,0.15); }
+    .overlay-menu { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 99; }
+    .overlay-menu.visible { display: block; }
+    .contenido-principal { margin-left: 0; }
+    .barra-superior { left: 0; width: 100%; }
+    .boton-hamburguesa button { display: block; }
+    .buscador { display: none; }
+
+    .menu-lateral.activo,
+   .menu-lateral.abierto {
+    left: 0;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+}
+    
+
+    /* Unidades Productivas */
+    .up-contenido, .nu-contenido, .du-contenido { padding: 72px 12px 12px 12px; }
+    .up-header, .du-header { flex-direction: column; gap: 12px; }
+    .btn-nueva-unidad { width: 100%; justify-content: center; }
+    .up-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .up-cards-grid { grid-template-columns: 1fr; gap: 12px; }
+    .up-filtros { flex-direction: column; align-items: stretch; }
+    .up-buscador { max-width: 100%; }
+    .up-select-tipo { width: 100%; }
+    .up-header-texto h1, .du-header-texto h1, .nu-titulo h1 { font-size: 18px; }
+
+    /* Detalle Unidad */
+    .du-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .du-acciones { width: 100%; flex-direction: column; }
+    .btn-editar, .btn-eliminar { width: 100%; justify-content: center; }
+    .du-tabs { flex-wrap: wrap; }
+    .du-tab { flex: none; width: calc(50% - 4px); font-size: 12px; }
+    .du-info-grid { grid-template-columns: 1fr; }
+
+    /* Nueva Unidad */
+    .nu-grid-2 { grid-template-columns: 1fr; }
+    .nu-footer { flex-direction: column-reverse; gap: 10px; }
+    .btn-cancelar, .btn-guardar { width: 100%; justify-content: center; }
+
+    /* Incidencias */
+    .inc-contenido { padding: 72px 12px 12px 12px; }
+    .inc-header { flex-direction: column; gap: 12px; }
+    .btn-nueva-inc { width: 100%; justify-content: center; }
+    .inc-stats { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    .inc-stat { padding: 12px 10px; }
+    .inc-stat-label { font-size: 10px; }
+    .inc-stat-valor { font-size: 20px; }
+    .inc-stat-icono { width: 30px; height: 30px; }
+    .inc-stat-icono img { width: 16px; height: 16px; }
+    .inc-filtros { flex-direction: column; align-items: stretch; }
+    .inc-buscador { max-width: 100%; }
+    .inc-select { width: 100%; }
+    .inc-card { flex-wrap: wrap; padding: 14px; }
+    .inc-titulo { font-size: 14px; }
+    .inc-badges { flex-direction: row; flex-wrap: wrap; width: 100%; justify-content: flex-start; margin-top: 8px; }
+    .inc-meta { gap: 10px; }
+
+    /* Nuevo Tratamiento */
+    .nt-contenido { padding: 72px 12px 12px 12px; }
+    .nt-card { padding: 16px; }
+    .nt-grid-2 { grid-template-columns: 1fr; gap: 12px; }
+    .nt-titulo h1 { font-size: 18px; }
+    .nt-upload-area { padding: 24px 12px; }
+    .nt-footer { flex-direction: column-reverse; gap: 10px; }
+    .btn-registrar { width: 100%; justify-content: center; }
+}
