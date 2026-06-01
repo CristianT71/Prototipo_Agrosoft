@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href=""><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="configuracion.html"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <!--CONTENIDO PRINCIPAL EDITAR PERFIL-->
+            <main class="panel-editar-perfil">
+
+    <header class="encabezado-editar-perfil">
+
+        <div class="volver-editar-perfil">
+            ←
+        </div>
+
+        <div>
+
+            <h1 class="titulo-editar-perfil">
+                Editar Perfil
+            </h1>
+
+            <p class="descripcion-editar-perfil">
+                Actualiza tu información personal
+            </p>
+
+        </div>
+
+    </header>
+
+    <section class="contenido-editar-perfil">
+
+        <aside class="tarjeta-foto-perfil-editar-perfil">
+
+            <div class="avatar-editar-perfil">
+
+                <span class="inicial-avatar-editar-perfil">
+                    U
+                </span>
+
+                <div class="icono-camara-avatar-editar-perfil">
+                    <img src="/assets/images/icons/3.png" alt="">
+                </div>
+
+            </div>
+
+            <h2 class="nombre-usuario-editar-perfil">
+                Usuario
+            </h2>
+
+            <p class="texto-foto-editar-perfil">
+                Cambiar foto de perfil
+            </p>
+
+            <button class="boton-subir-foto-editar-perfil">
+
+                <div class="icono-subir-foto-editar-perfil">
+                    <img src="" alt="">
+                </div>
+
+                Subir nueva foto
+
+            </button>
+
+        </aside>
+
+        <section class="tarjeta-informacion-editar-perfil">
+
+            <h2 class="titulo-informacion-editar-perfil">
+                Información Personal
+            </h2>
+
+            <form class="formulario-editar-perfil">
+
+                <article class="campo-editar-perfil">
+
+                    <label for="nombre-editar-perfil">
+                        Nombre completo *
+                    </label>
+
+                    <div class="entrada-editar-perfil">
+
+                        <div class="icono-campo-editar-perfil">
+                            <img src="/assets/images/icons/3.2.png" alt="">
+                        </div>
+
+                        <input
+                            id="nombre-editar-perfil"
+                            type="text"
+                            value="Usuario"
+                        >
+
+                    </div>
+
+                </article>
+
+                <article class="campo-editar-perfil">
+
+                    <label for="correo-editar-perfil">
+                        Correo electrónico *
+                    </label>
+
+                    <div class="entrada-editar-perfil entrada-deshabilitada-editar-perfil">
+
+                        <div class="icono-campo-editar-perfil">
+                            <img src="/assets/images/icons/3.3.png" alt="">
+                        </div>
+
+                        <input
+                            id="correo-editar-perfil"
+                            type="text"
+                            value="usuario@gmail.com"
+                            disabled
+                        >
+
+                    </div>
+
+                    <small>
+                        El correo electrónico no puede ser modificado por razones de seguridad
+                    </small>
+
+                </article>
+
+                <article class="campo-editar-perfil">
+
+                    <label for="telefono-editar-perfil">
+                        Teléfono
+                    </label>
+
+                    <div class="entrada-editar-perfil">
+
+                        <div class="icono-campo-editar-perfil">
+                            <img src="/assets/images/icons/3.4.png" alt="">
+                        </div>
+
+                        <input
+                            id="telefono-editar-perfil"
+                            type="number"
+                            value="3100000000"
+                        >
+
+                    </div>
+
+                </article>
+
+                <article class="campo-editar-perfil">
+
+                    <label for="ubicacion-editar-perfil">
+                        Ubicación
+                    </label>
+
+                    <div class="entrada-editar-perfil">
+
+                        <div class="icono-campo-editar-perfil">
+                            <img src="/assets/images/icons/3.5.png" alt="">
+                        </div>
+
+                        <input
+                            id="ubicacion-editar-perfil"
+                            type="text"
+                            value="Valle del Cauca, Colombia"
+                        >
+
+                    </div>
+
+                </article>
+
+            </form>
+
+            <footer class="acciones-editar-perfil">
+
+                <button
+                    type="button"
+                    class="boton-cancelar-editar-perfil"
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    type="submit"
+                    class="boton-guardar-editar-perfil"
+                >
+
+                    <div class="icono-guardar-editar-perfil">
+                        <img src="/assets/images/icons/3.6.png" alt="">
+                    </div>
+
+                    Guardar Cambios
+
+                </button>
+
+            </footer>
+
+        </section>
+
+    </section>
+
+</main>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

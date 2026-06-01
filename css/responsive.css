@@ -1,6 +1,6 @@
 /*Adaptar a pantallas mas grandes*/
 
-/*Pantalla login*/
+/**********************************************Pantalla login*/
 @media (min-width: 581px) {
 .tarjeta-login {
     width: 448px;
@@ -31,7 +31,7 @@
 }
 }
 
-/*Responsive para dashboard*/
+/***********************************Responsive para dashboard*/
 
 /*Pantalla pequeñas*/
 /* Responsive - Pantallas pequeñas */
@@ -62,3 +62,693 @@
     }
     
 }   
+/************************RESPONSIVE PARA CONFIGURACION*******************************************/
+
+@media (max-width:768px){
+
+    .panel-configuracion{
+        padding:16px;
+    }
+
+    .encabezado-configuracion{
+        gap:12px;
+        margin-bottom:20px;
+    }
+
+    .volver-configuracion{
+        font-size:24px;
+    }
+
+    .titulo-configuracion{
+        font-size:32px;
+    }
+
+    .descripcion-configuracion{
+        font-size:14px;
+    }
+
+    /* TODO EN UNA SOLA COLUMNA */
+
+    .contenido-configuracion{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .columna-izquierda-configuracion,
+    .columna-derecha-configuracion{
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+    }
+
+    .tarjeta-apariencia-configuracion,
+    .tarjeta-notificaciones-configuracion,
+    .tarjeta-datos-configuracion,
+    .tarjeta-almacenamiento-configuracion,
+    .tarjeta-mantenimiento-configuracion{
+        margin-bottom:0;
+        padding:18px;
+    }
+
+    .tarjeta-apariencia-configuracion h2,
+    .tarjeta-notificaciones-configuracion h2,
+    .tarjeta-datos-configuracion h2,
+    .tarjeta-almacenamiento-configuracion h2,
+    .tarjeta-mantenimiento-configuracion h2{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+
+    .opcion-configuracion{
+        gap:12px;
+    }
+
+    .contenido-opcion-configuracion{
+        gap:10px;
+    }
+
+    .icono-opcion-configuracion{
+        width:42px;
+        height:42px;
+        flex-shrink:0;
+    }
+
+    .icono-opcion-configuracion img{
+        width:20px;
+        height:20px;
+    }
+
+    .opcion-configuracion h3{
+        font-size:15px;
+    }
+
+    .opcion-configuracion p{
+        font-size:13px;
+    }
+
+    .contenedor-idioma-configuracion{
+        padding:14px;
+    }
+
+    .selector-idioma-configuracion{
+        height:42px;
+        font-size:14px;
+    }
+
+    .encabezado-almacenamiento-configuracion{
+        font-size:14px;
+    }
+
+    .detalle-almacenamiento-configuracion{
+        font-size:14px;
+    }
+
+    .boton-mantenimiento-configuracion{
+        height:48px;
+        font-size:14px;
+    }
+
+}
+
+/**************************************************/
+/**************************************CENTRO DE AYUDAS**********************************/
+
+@media (max-width:768px){
+
+    .panel-centro-ayuda{
+        padding:16px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .encabezado-centro-ayuda{
+        gap:12px;
+        margin-bottom:20px;
+    }
+
+    .volver-centro-ayuda{
+        font-size:26px;
+        margin-top:2px;
+    }
+
+    .titulo-centro-ayuda{
+        font-size:32px;
+    }
+
+    .descripcion-centro-ayuda{
+        font-size:13px;
+        margin-top:6px;
+    }
+
+    /* BUSCADOR */
+
+    .contenedor-buscador-centro-ayuda{
+        height:60px;
+        padding:0 16px;
+        border-radius:16px;
+        gap:12px;
+    }
+
+    .icono-buscador-centro-ayuda{
+        width:24px;
+        height:24px;
+        flex-shrink:0;
+    }
+
+    .contenedor-buscador-centro-ayuda input{
+        font-size:14px;
+    }
+
+    /* CATEGORÍAS EN UNA COLUMNA */
+
+    .categorias-centro-ayuda{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .tarjeta-categoria-centro-ayuda{
+        padding:18px;
+    }
+
+    .contenido-categoria-centro-ayuda{
+        gap:12px;
+    }
+
+    .icono-categoria-centro-ayuda{
+        width:42px;
+        height:42px;
+    }
+
+    .icono-categoria-centro-ayuda img{
+        width:20px;
+        height:20px;
+    }
+
+    .tarjeta-categoria-centro-ayuda h2{
+        font-size:16px;
+    }
+
+    .tarjeta-categoria-centro-ayuda p{
+        font-size:13px;
+    }
+
+    .tarjeta-categoria-centro-ayuda span{
+        font-size:12px;
+    }
+
+    .flecha-categoria-centro-ayuda{
+        font-size:22px;
+    }
+
+    /* PREGUNTAS */
+
+    .preguntas-centro-ayuda{
+        padding:18px;
+        border-radius:18px;
+    }
+
+    .titulo-preguntas-centro-ayuda{
+        font-size:20px;
+        margin-bottom:16px;
+    }
+
+    .pregunta-centro-ayuda summary{
+        font-size:14px;
+        padding:16px 28px 16px 0;
+    }
+
+    .pregunta-centro-ayuda summary::after{
+        top:16px;
+        font-size:16px;
+    }
+
+    .respuesta-pregunta-centro-ayuda{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+    /* CONTACTO */
+
+    .contacto-centro-ayuda{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:16px;
+        padding:18px;
+    }
+
+    .informacion-contacto-centro-ayuda{
+        gap:12px;
+    }
+
+    .icono-contacto-centro-ayuda{
+        width:50px;
+        height:50px;
+    }
+
+    .icono-contacto-centro-ayuda img{
+        width:24px;
+        height:24px;
+    }
+
+    .informacion-contacto-centro-ayuda h2{
+        font-size:18px;
+        margin-bottom:4px;
+    }
+
+    .informacion-contacto-centro-ayuda p{
+        font-size:13px;
+    }
+
+    .boton-contactar-centro-ayuda{
+        width:100%;
+        justify-content:center;
+        height:46px;
+        font-size:14px;
+    }
+
+}
+/*************************************************************************************/
+
+/**************************************************EDITAR PERFIL*******/
+
+@media (max-width:768px){
+
+    .panel-editar-perfil{
+        padding:16px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .encabezado-editar-perfil{
+        gap:12px;
+        margin-bottom:20px;
+    }
+
+    .volver-editar-perfil{
+        font-size:26px;
+    }
+
+    .titulo-editar-perfil{
+        font-size:32px;
+    }
+
+    .descripcion-editar-perfil{
+        font-size:13px;
+    }
+
+    /* TODO EN UNA SOLA COLUMNA */
+
+    .contenido-editar-perfil{
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+    }
+
+    /* TARJETA FOTO */
+
+    .tarjeta-foto-perfil-editar-perfil{
+        width:100%;
+        padding:20px;
+        box-sizing:border-box;
+    }
+
+    /* AVATAR MÁS PEQUEÑO Y MÁS ABAJO */
+
+    .avatar-editar-perfil{
+        width:120px;
+        height:120px;
+        margin:30px auto 0;
+        position:relative;
+    }
+
+    .inicial-avatar-editar-perfil{
+        font-size:28px;
+    }
+
+    .icono-camara-avatar-editar-perfil{
+        width:40px;
+        height:40px;
+        right:0;
+        bottom:0;
+    }
+
+    .icono-camara-avatar-editar-perfil img{
+        width:12px;
+        height:12px;
+    }
+
+    .nombre-usuario-editar-perfil{
+        margin-top:12px;
+        font-size:18px;
+        text-align:center;
+    }
+
+    .texto-foto-editar-perfil{
+        text-align:center;
+        font-size:13px;
+    }
+
+    .boton-subir-foto-editar-perfil{
+        width:100%;
+        justify-content:center;
+        font-size:14px;
+    }
+
+    /* TARJETA INFORMACIÓN */
+
+    .tarjeta-informacion-editar-perfil{
+        width:100%;
+        padding:20px;
+        box-sizing:border-box;
+    }
+
+    .titulo-informacion-editar-perfil{
+        font-size:22px;
+    }
+
+    .campo-editar-perfil{
+        margin-bottom:18px;
+    }
+
+    .campo-editar-perfil label{
+        font-size:14px;
+    }
+
+    .entrada-editar-perfil{
+        height:52px;
+    }
+
+    .entrada-editar-perfil input{
+        width:100%;
+        font-size:14px;
+    }
+
+    .icono-campo-editar-perfil{
+        width:20px;
+        height:20px;
+    }
+
+    .icono-campo-editar-perfil img{
+        width:14px;
+        height:14px;
+    }
+
+    .campo-editar-perfil small{
+        font-size:12px;
+        line-height:1.4;
+    }
+
+    /* BOTONES */
+
+    .acciones-editar-perfil{
+        display:flex;
+        gap:10px;
+        margin-top:20px;
+    }
+
+    .boton-cancelar-editar-perfil,
+    .boton-guardar-editar-perfil{
+        flex:1;
+        height:48px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:14px;
+    }
+
+    .icono-guardar-editar-perfil{
+        width:18px;
+        height:18px;
+    }
+
+    .icono-guardar-editar-perfil img{
+        width:12px;
+        height:12px;
+    }
+
+}
+
+/***********************************/
+/*****************************************NOTIFICACIONES***********************************************/
+@media (max-width:768px){
+
+    .panel-notificaciones{
+        padding:16px;
+    
+    }
+
+    /* ENCABEZADO */
+
+    .encabezado-notificaciones{
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+    .titulo-notificaciones{
+        font-size:32px;
+    }
+
+    .descripcion-notificaciones{
+        font-size:14px;
+    }
+
+    .contador-nuevas-notificaciones{
+        font-size:13px;
+        padding:6px 12px;
+    }
+
+    /* TODO EL CONTENIDO EN UNA SOLA COLUMNA */
+
+    .contenido-notificaciones{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    /* CONFIGURACIÓN */
+
+    .panel-configuracion-notificaciones{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .opcion-configuracion-notificaciones{
+        font-size:16px;
+    }
+
+    /* LISTADO */
+
+    .panel-listado-notificaciones{
+        width:100%;
+    }
+
+    /* NO LEÍDAS Y TODAS SIGUEN EN DOS COLUMNAS */
+
+    .filtro-notificaciones{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        width:100%;
+    }
+
+    .boton-filtro-notificaciones{
+        font-size:14px;
+        padding:10px;
+    }
+
+    /* TARJETAS */
+
+    .tarjeta-notificacion-notificaciones{
+        padding:16px;
+        gap:12px;
+    }
+
+    .icono-notificacion-notificaciones{
+        width:50px;
+        height:50px;
+        flex-shrink:0;
+    }
+
+    .icono-notificacion-notificaciones img{
+        width:24px;
+        height:24px;
+    }
+
+    .titulo-tarjeta-notificaciones{
+        font-size:18px;
+    }
+
+    .descripcion-tarjeta-notificaciones{
+        font-size:14px;
+    }
+
+    .fecha-tarjeta-notificaciones{
+        font-size:13px;
+    }
+
+    .indicador-no-leida-notificaciones{
+        width:10px;
+        height:10px;
+    }
+
+}
+
+
+
+/******************************************************************************/
+
+/************************************************REPONSIVE PARA TRATAMIENTOS******************************/
+
+@media (max-width:768px){
+
+    .panel-principal-tratamiento{
+        margin:0;
+        left:0;
+        top:0;
+        width:100%;
+        padding:16px;
+        box-sizing:border-box;
+    }
+
+    .encabezado-tratamiento{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .titulo-tratamiento{
+        font-size:30px;
+    }
+
+    .descripcion-tratamiento{
+        font-size:13px;
+        max-width:220px;
+    }
+
+    .boton-nuevo-tratamiento{
+        min-width:180px;
+        height:44px;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-size:14px;
+        white-space:nowrap;
+    }
+
+    /* RESUMENES EN UNA SOLA COLUMNA */
+
+    .resumen-tratamiento{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+
+    .tarjeta-resumen-tratamiento{
+        padding:14px;
+    }
+
+    .tarjeta-resumen-tratamiento h3{
+        font-size:13px;
+    }
+
+    .numero-activo-tratamiento,
+    .numero-vencer-tratamiento,
+    .numero-mes-tratamiento{
+        font-size:22px;
+    }
+
+    .contenedor-icono-tratamiento{
+        width:36px;
+        height:36px;
+    }
+
+    .contenedor-icono-tratamiento img{
+        width:18px;
+        height:18px;
+    }
+
+    /* BUSCADOR Y SELECTOR JUNTOS */
+
+ .filtros-tratamiento{
+    display:grid;
+    grid-template-columns:1fr 140px;
+    gap:16px;
+    width:100%;
+}
+
+.buscador-tratamiento{
+    width:70%;
+}
+
+.selector-tratamiento{
+    width:100%;
+}
+    .buscador-tratamiento input{
+        width:100%;
+    border-radius:12px;
+    font-size:14px;     
+    }
+    .selector-tratamiento select{
+        width:100%;
+        font-size:14px;
+         border-radius:12px;
+    }
+
+    /* TARJETAS */
+
+    .tarjeta-tratamiento{
+        padding:16px;
+        gap:12px;
+    }
+
+    .icono-principal-tratamiento{
+        width:48px;
+        height:48px;
+        flex-shrink:0;
+    }
+
+    .icono-principal-tratamiento img{
+        width:24px;
+        height:24px;
+    }
+
+    .contenido-tratamiento h2{
+        font-size:16px;
+    }
+
+    .dosificacion-tratamiento{
+        font-size:13px;
+    }
+
+    .detalle-tratamiento{
+        gap:8px;
+        font-size:13px;
+    }
+
+    .relacionado-tratamiento{
+        font-size:13px;
+    }
+
+    .emoji-tratamiento{
+        font-size:13px;
+    }
+
+    .informacion-lateral-tratamiento{
+        min-width:95px;
+    }
+
+    .estado-tratamiento{
+        font-size:11px;
+        padding:5px 10px;
+    }
+
+    .fecha-tratamiento p,
+    .fecha-tratamiento span{
+        font-size:12px;
+    }
+
+}
+
+/********************************************************/

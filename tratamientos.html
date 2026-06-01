@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href=""><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="configuracion.html"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <!--CONTENIDO PRINCIPAL TRATAMIENTOS-->
+
+            <main class="panel-principal-tratamiento">
+
+    <header class="encabezado-tratamiento">
+
+        <div>
+            <h1 class="titulo-tratamiento">Tratamientos</h1>
+            <p class="descripcion-tratamiento">
+                Gestiona los tratamientos aplicados a tus unidades productivas
+            </p>
+        </div>
+
+        <button class="boton-nuevo-tratamiento">
+            + Nuevo Tratamiento
+        </button>
+
+    </header>
+
+    <section class="resumen-tratamiento">
+
+        <article class="tarjeta-resumen-tratamiento">
+
+            <div>
+                <h3>Tratamientos Activos</h3>
+                <span class="numero-activo-tratamiento">1</span>
+            </div>
+
+            <div class="contenedor-icono-tratamiento">
+                <img src="/assets/images/icons/5.png" alt="">
+            </div>
+
+        </article>
+
+        <article class="tarjeta-resumen-tratamiento">
+
+            <div>
+                <h3>Próximos a vencer</h3>
+                <span class="numero-vencer-tratamiento">1</span>
+            </div>
+
+            <div class="contenedor-icono-tratamiento">
+                <img src="/assets/images/icons/5.1.png" alt="">
+            </div>
+
+        </article>
+
+        <article class="tarjeta-resumen-tratamiento">
+
+            <div>
+                <h3>Este mes</h3>
+                <span class="numero-mes-tratamiento">3</span>
+            </div>
+
+            <div class="contenedor-icono-tratamiento">
+                <img src="/assets/images/icons/5.2.png" alt="">
+            </div>
+
+        </article>
+
+    </section>
+
+    <section class="filtros-tratamiento">
+
+        <div class="buscador-tratamiento">
+            <input type="text" placeholder="Buscar tratamientos...">
+        </div>
+
+        <div class="selector-tratamiento">
+            <select>
+                <option>Todos</option>
+                <option>Activos</option>
+                <option>Próximos a vencer</option>
+                <option>Completados</option>
+            </select>
+        </div>
+
+    </section>
+
+    <section class="listado-tratamiento">
+
+        <!-- Tarjeta 1 -->
+
+        <article class="tarjeta-tratamiento">
+
+            <div class="icono-principal-tratamiento">
+                <img src="/assets/images/icons/5.3.png" alt="">
+            </div>
+
+            <div class="contenido-tratamiento">
+
+                <h2>Fungicida orgánico</h2>
+
+                <p class="dosificacion-tratamiento">
+                    Dosificación: 2.5 L/Ha
+                </p>
+
+                <div class="detalle-tratamiento">
+
+                    <div>
+                        <span class="emoji-tratamiento">📍</span>
+                        Tomate Cherry - Lote A
+                    </div>
+
+                    <div>
+                        <span class="emoji-tratamiento">📅</span>
+                        Aplicado: 21 Abr 2026
+                    </div>
+
+                </div>
+
+                <div class="relacionado-tratamiento">
+                    <span class="emoji-tratamiento">🔗</span>
+                    Relacionado: Manchas amarillas en hojas
+                </div>
+
+            </div>
+
+            <aside class="informacion-lateral-tratamiento">
+
+                <div class="estado-tratamiento estado-activo-tratamiento">
+                    Activo
+                </div>
+
+                <div class="fecha-tratamiento">
+                    <p>Vence: 28 Abr 2026</p>
+                    <span>4 días restantes</span>
+                </div>
+
+            </aside>
+
+        </article>
+
+        <!-- Tarjeta 2 -->
+
+        <article class="tarjeta-tratamiento">
+
+            <div class="icono-principal-tratamiento">
+                <img src="/assets/images/icons/5.3.png" alt="">
+            </div>
+
+            <div class="contenido-tratamiento">
+
+                <h2>Insecticida de contacto</h2>
+
+                <p class="dosificacion-tratamiento">
+                    Dosificación: 1.5 L/Ha
+                </p>
+
+                <div class="detalle-tratamiento">
+
+                    <div>
+                        <span class="emoji-tratamiento">📍</span>
+                        Lechuga Crespa - Lote B
+                    </div>
+
+                    <div>
+                        <span class="emoji-tratamiento">📅</span>
+                        Aplicado: 22 Abr 2026
+                    </div>
+
+                </div>
+
+                <div class="relacionado-tratamiento">
+                    <span class="emoji-tratamiento">🔗</span>
+                    Relacionado: Plagas de pulgón
+                </div>
+
+            </div>
+
+            <aside class="informacion-lateral-tratamiento">
+
+                <div class="estado-tratamiento estado-vencer-tratamiento">
+                    Próximo a vencer
+                </div>
+
+                <div class="fecha-tratamiento">
+                    <p>Vence: 25 Abr 2026</p>
+                    <span class="texto-vencer-tratamiento">
+                        1 día restante
+                    </span>
+                </div>
+
+            </aside>
+
+        </article>
+
+        <!-- Tarjeta 3 -->
+
+        <article class="tarjeta-tratamiento">
+
+            <div class="icono-principal-tratamiento">
+                <img src="/assets/images/icons/5.3.png" alt="">
+            </div>
+
+            <div class="contenido-tratamiento">
+
+                <h2>Fertilizante NPK 15-15-15</h2>
+
+                <p class="dosificacion-tratamiento">
+                    Dosificación: 50 kg/Ha
+                </p>
+
+                <div class="detalle-tratamiento">
+
+                    <div>
+                        <span class="emoji-tratamiento">📍</span>
+                        Pimentón - Invernadero 1
+                    </div>
+
+                    <div>
+                        <span class="emoji-tratamiento">📅</span>
+                        Aplicado: 15 Abr 2026
+                    </div>
+
+                </div>
+
+            </div>
+
+            <aside class="informacion-lateral-tratamiento">
+
+                <div class="estado-tratamiento estado-completado-tratamiento">
+                    Completado
+                </div>
+
+                <div class="fecha-tratamiento">
+                    <p>Vence: 22 Abr 2026</p>
+                </div>
+
+            </aside>
+
+        </article>
+
+    </section>
+
+</main>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

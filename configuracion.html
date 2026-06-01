@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href=""><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="configuracion.html"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <!--CONTENIDO PRINCIPAL CONFIGURACION-->
+            <main class="panel-configuracion">
+
+    <header class="encabezado-configuracion">
+
+        <div class="volver-configuracion">
+            ←
+        </div>
+
+        <div>
+
+            <h1 class="titulo-configuracion">
+                Configuración
+            </h1>
+
+            <p class="descripcion-configuracion">
+                Personaliza la aplicación según tus preferencias
+            </p>
+
+        </div>
+
+    </header>
+
+    <section class="contenido-configuracion">
+
+        <section class="columna-izquierda-configuracion">
+
+            <article class="tarjeta-apariencia-configuracion">
+
+                <h2>
+                    Apariencia
+                </h2>
+
+                <div class="opcion-configuracion">
+
+                    <div class="contenido-opcion-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="./assets/images/icons/1.png" alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Modo oscuro</h3>
+
+                            <p>
+                                Activar tema oscuro
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <label class="interruptor-configuracion">
+
+                        <input type="checkbox">
+
+                        <span class="deslizador-configuracion"></span>
+
+                    </label>
+
+                </div>
+
+                <div class="contenedor-idioma-configuracion">
+
+                    <div class="cabecera-idioma-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="./assets/images/icons/1,2.png" alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Idioma</h3>
+
+                            <p>
+                                Selecciona tu idioma preferido
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <select class="selector-idioma-configuracion">
+
+                        <option>ES Español</option>
+
+                        <option>US English</option>
+
+                        <option>BR Português</option>
+
+                    </select>
+
+                </div>
+
+            </article>
+
+            <article class="tarjeta-notificaciones-configuracion">
+
+                <h2>
+                    Notificaciones
+                </h2>
+
+                <div class="opcion-configuracion">
+
+                    <div class="contenido-opcion-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="./assets/images/icons/1,3.png" alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Notificaciones push</h3>
+
+                            <p>
+                                Recibir alertas en tiempo real
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <label class="interruptor-configuracion">
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                        <span class="deslizador-configuracion"></span>
+
+                    </label>
+
+                </div>
+
+                <div class="opcion-configuracion">
+
+                    <div class="contenido-opcion-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="./assets/images/icons/1,4.png " alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Notificaciones por correo</h3>
+
+                            <p>
+                                Recibir resúmenes por email
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <label class="interruptor-configuracion">
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                        <span class="deslizador-configuracion"></span>
+
+                    </label>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="columna-derecha-configuracion">
+
+            <article class="tarjeta-datos-configuracion">
+
+                <h2>
+                    Datos y almacenamiento
+                </h2>
+
+                <div class="opcion-configuracion fondo-opcion-configuracion">
+
+                    <div class="contenido-opcion-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="/assets/images/icons/1,5.png" alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Respaldo automático</h3>
+
+                            <p>
+                                Copias de seguridad diarias
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <label class="interruptor-configuracion">
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                        <span class="deslizador-configuracion"></span>
+
+                    </label>
+
+                </div>
+
+                <div class="opcion-configuracion">
+
+                    <div class="contenido-opcion-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="/assets/images/icons/1,6.png" alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Modo sin conexión</h3>
+
+                            <p>
+                                Trabajar offline
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <label class="interruptor-configuracion">
+
+                        <input type="checkbox">
+
+                        <span class="deslizador-configuracion"></span>
+
+                    </label>
+
+                </div>
+
+                <div class="opcion-configuracion">
+
+                    <div class="contenido-opcion-configuracion">
+
+                        <div class="icono-opcion-configuracion">
+                            <img src="/assets/images/icons/1,7.png" alt="">
+                        </div>
+
+                        <div>
+
+                            <h3>Exportar datos</h3>
+
+                            <p>
+                                Descargar toda tu información
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="tarjeta-almacenamiento-configuracion">
+
+                <h2>
+                    Uso de almacenamiento
+                </h2>
+
+                <div class="encabezado-almacenamiento-configuracion">
+
+                    <span>
+                        45 MB de 100 MB
+                    </span>
+
+                    <span>
+                        45%
+                    </span>
+
+                </div>
+
+                <div class="barra-almacenamiento-configuracion">
+
+                    <div class="progreso-almacenamiento-configuracion"></div>
+
+                </div>
+
+                <div class="detalle-almacenamiento-configuracion">
+
+                    <div>
+                        📷 Evidencias fotográficas
+                    </div>
+
+                    <strong>32 MB</strong>
+
+                </div>
+
+                <div class="detalle-almacenamiento-configuracion">
+
+                    <div>
+                        📊 Base de datos
+                    </div>
+
+                    <strong>10 MB</strong>
+
+                </div>
+
+                <div class="detalle-almacenamiento-configuracion">
+
+                    <div>
+                        📄 Reportes
+                    </div>
+
+                    <strong>3 MB</strong>
+
+                </div>
+
+            </article>
+
+            <article class="tarjeta-mantenimiento-configuracion">
+
+                <h2>
+                    Mantenimiento
+                </h2>
+
+                <button class="boton-mantenimiento-configuracion">
+
+                    <div class="icono-boton-mantenimiento-configuracion">
+                        <img src="/assets/images/icons/1,8.png" alt="">
+                    </div>
+
+                    Sincronizar datos ahora
+
+                </button>
+
+                <button class="boton-mantenimiento-configuracion">
+
+                    <div class="icono-boton-mantenimiento-configuracion">
+                        <img src="/assets/images/icons/1,9.png" alt="">
+                    </div>
+
+                    Limpiar caché de la aplicación
+
+                </button>
+
+            </article>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>

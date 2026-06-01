@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li class="activo"><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"> <span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"> <span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"> <span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"> <span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"> <span>Inventario</span></a></li>
+                    <li><a href=""><img src="/assets/images/icons/icono-calendario.svg"> <span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"> <span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"> <span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"> <span>Historial</span></a></li>
+
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="configuracion.html"><img src="/assets/images/icons/icono-configuracion.svg"> <span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"> <span>Cerrar Sesión</span></a></li>
+                </ul>
+
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <!--CONTENIDO PRINCIPAL NOTIFICACIONES-->
+            <main class="panel-notificaciones">
+
+    <header class="encabezado-notificaciones">
+
+        <div class="volver-notificaciones">
+            ←
+        </div>
+
+        <div class="informacion-encabezado-notificaciones">
+
+            <h1 class="titulo-notificaciones">
+                Notificaciones
+            </h1>
+
+            <p class="descripcion-notificaciones">
+                Mantente informado de todas tus alertas
+            </p>
+
+        </div>
+
+        <div class="contador-nuevas-notificaciones">
+            3 nuevas
+        </div>
+
+    </header>
+
+    <section class="contenido-notificaciones">
+
+        <aside class="panel-configuracion-notificaciones">
+
+            <header class="titulo-configuracion-notificaciones">
+
+                <div class="icono-configuracion-notificaciones">
+                    <img src="/assets/images/icons/4.png" alt="">
+                </div>
+
+                <h2>
+                    Configuración
+                </h2>
+
+            </header>
+
+            <div class="opcion-configuracion-notificaciones">
+
+                <span>Incidencias</span>
+
+                <label class="interruptor-notificaciones">
+                    <input type="checkbox" checked>
+                    <span class="slider-notificaciones"></span>
+                </label>
+
+            </div>
+
+            <div class="opcion-configuracion-notificaciones">
+
+                <span>Tratamientos</span>
+
+                <label class="interruptor-notificaciones">
+                    <input type="checkbox" checked>
+                    <span class="slider-notificaciones"></span>
+                </label>
+
+            </div>
+
+            <div class="opcion-configuracion-notificaciones">
+
+                <span>Cosechas</span>
+
+                <label class="interruptor-notificaciones">
+                    <input type="checkbox" checked>
+                    <span class="slider-notificaciones"></span>
+                </label>
+
+            </div>
+
+            <div class="opcion-configuracion-notificaciones">
+
+                <span>Inventario</span>
+
+                <label class="interruptor-notificaciones">
+                    <input type="checkbox" checked>
+                    <span class="slider-notificaciones"></span>
+                </label>
+
+            </div>
+
+            <button class="boton-limpiar-notificaciones">
+
+                <div class="icono-limpiar-notificaciones">
+                    <img src="/assets/images/icons/4.1.png" alt="">
+                </div>
+
+                Limpiar todas
+
+            </button>
+
+        </aside>
+
+        <section class="panel-listado-notificaciones">
+
+            <nav class="filtro-notificaciones">
+
+                <button
+                    id="boton-no-leidas"
+                    class="boton-filtro-notificaciones activo-notificaciones"
+                >
+                    No leídas (3)
+                </button>
+
+                <button
+                    id="boton-todas"
+                    class="boton-filtro-notificaciones"
+                >
+                    Todas (5)
+                </button>
+
+            </nav>
+
+            <section
+                id="contenedor-notificaciones"
+                class="contenedor-notificaciones"
+            >
+
+                <!-- JS -->
+
+            </section>
+
+        </section>
+
+    </section>
+
+</main>
+
+<script src="./js/notificaciones.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
