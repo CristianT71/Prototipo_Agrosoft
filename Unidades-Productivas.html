@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="csss/Unidad-Productiva.css">
+    <link rel="stylesheet" href="csss/unidades-productivas-content.css">
+    <link rel="stylesheet" href="csss/responsive.css"> 
+    <title>Unidades Productivas</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li class="#"><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="./incidencias.html"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+
+            <header class="barra-superior">
+                <div class="boton-hamburguesa">
+                    <button>☰</button>
+                </div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <main class="up-contenido">
+
+                <div class="up-header">
+                    <div class="up-header-texto">
+                        <h1>Unidades Productivas</h1>
+                        <p>Gestiona y monitorea tus unidades de producción</p>
+                    </div>
+                    <button class="btn-nueva-unidad" onclick="abrirFormulario()">
+                        <img src="/assets/images/icons/icono-mas.svg" alt="Agregar">
+                        Nueva Unidad
+                    </button>
+                </div>
+
+                <div class="up-filtros">
+                    <div class="up-buscador">
+                        <img src="/assets/images/icons/icono-buscar.svg" alt="Buscar">
+                        <input type="text" placeholder="Buscar unidades productivas..." id="inputBuscar" oninput="filtrarUnidades()">
+                    </div>
+                    <div class="up-select-wrap">
+                        <div class="up-select-custom" id="selectTipoBtn" onclick="toggleSelectTipo(event)">
+                            <span id="selectTipoTexto">Todos los tipos</span>
+                            <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="up-chevron">
+                        </div>
+                        <div class="up-select-opciones" id="selectOpciones">
+                            <div class="up-opcion up-opcion-activa" onclick="seleccionarTipo(this, '', event)">Todos los tipos</div>
+                            <div class="up-opcion" onclick="seleccionarTipo(this, 'Hortalizas', event)">Hortalizas</div>
+                            <div class="up-opcion" onclick="seleccionarTipo(this, 'Aromáticas', event)">Aromáticas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="up-stats-grid">
+                    <div class="up-stat-card">
+                        <div>
+                            <p class="up-stat-label">Total Unidades</p>
+                            <p class="up-stat-valor" id="statTotal">4</p>
+                        </div>
+                        <div class="up-stat-icono up-si-verde">
+                            <img src="/assets/images/icons/icono-capas.svg" alt="Total">
+                        </div>
+                    </div>
+                    <div class="up-stat-card">
+                        <div>
+                            <p class="up-stat-label">Activas</p>
+                            <p class="up-stat-valor" id="statActivas">4</p>
+                        </div>
+                        <div class="up-stat-icono up-si-verde">
+                            <img src="/assets/images/icons/icono-capas.svg" alt="Activas">
+                        </div>
+                    </div>
+                    <div class="up-stat-card">
+                        <div>
+                            <p class="up-stat-label">Área Total</p>
+                            <p class="up-stat-valor" id="statArea">480</p>
+                            <p class="up-stat-sub">m²</p>
+                        </div>
+                        <div class="up-stat-icono up-si-azul">
+                            <img src="/assets/images/icons/icono-ubicacion.svg" alt="Área">
+                        </div>
+                    </div>
+                    <div class="up-stat-card">
+                        <div>
+                            <p class="up-stat-label">Tipos</p>
+                            <p class="up-stat-valor" id="statTipos">2</p>
+                        </div>
+                        <div class="up-stat-icono up-si-amarillo">
+                            <img src="/assets/images/icons/icono-filtro.svg" alt="Tipos">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="up-cards-grid" id="gridUnidades">
+
+                    <div class="up-unit-card" data-tipo="Hortalizas" onclick="verDetalle(this)">
+                        <div class="up-card-top">
+                            <h3 class="up-card-titulo">Tomate Cherry - Lote A</h3>
+                            <span class="up-badge up-badge-hortalizas">Hortalizas</span>
+                        </div>
+                        <p class="up-card-variedad">Solanum lycopersicum</p>
+                        <div class="up-card-info">
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-ubicacion.svg" alt="">
+                                    Zona Norte
+                                </span>
+                                <span class="up-area">150 m²</span>
+                            </div>
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-calendario.svg" alt="">
+                                    Inicio: 15 Ene 2026
+                                </span>
+                            </div>
+                        </div>
+                        <hr class="up-divider">
+                        <div class="up-card-estado">
+                            <span class="up-estado-label">Estado</span>
+                            <span class="up-badge-activa">Activa</span>
+                        </div>
+                    </div>
+
+                    <div class="up-unit-card" data-tipo="Hortalizas" onclick="verDetalle(this)">
+                        <div class="up-card-top">
+                            <h3 class="up-card-titulo">Lechuga Crespa - Lote B</h3>
+                            <span class="up-badge up-badge-hortalizas">Hortalizas</span>
+                        </div>
+                        <p class="up-card-variedad">Lactuca sativa</p>
+                        <div class="up-card-info">
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-ubicacion.svg" alt="">
+                                    Zona Centro
+                                </span>
+                                <span class="up-area">200 m²</span>
+                            </div>
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-calendario.svg" alt="">
+                                    Inicio: 10 Ene 2026
+                                </span>
+                            </div>
+                        </div>
+                        <hr class="up-divider">
+                        <div class="up-card-estado">
+                            <span class="up-estado-label">Estado</span>
+                            <span class="up-badge-activa">Activa</span>
+                        </div>
+                    </div>
+
+                    <div class="up-unit-card" data-tipo="Hortalizas" onclick="verDetalle(this)">
+                        <div class="up-card-top">
+                            <h3 class="up-card-titulo">Pimentón - Invernadero 1</h3>
+                            <span class="up-badge up-badge-hortalizas">Hortalizas</span>
+                        </div>
+                        <p class="up-card-variedad">Capsicum annuum</p>
+                        <div class="up-card-info">
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-ubicacion.svg" alt="">
+                                    Invernadero
+                                </span>
+                                <span class="up-area">80 m²</span>
+                            </div>
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-calendario.svg" alt="">
+                                    Inicio: 5 Ene 2026
+                                </span>
+                            </div>
+                        </div>
+                        <hr class="up-divider">
+                        <div class="up-card-estado">
+                            <span class="up-estado-label">Estado</span>
+                            <span class="up-badge-activa">Activa</span>
+                        </div>
+                    </div>
+
+                    <div class="up-unit-card" data-tipo="Aromáticas" onclick="verDetalle(this)">
+                        <div class="up-card-top">
+                            <h3 class="up-card-titulo">Cilantro - Lote C</h3>
+                            <span class="up-badge up-badge-aromaticas">Aromáticas</span>
+                        </div>
+                        <p class="up-card-variedad">Coriandrum sativum</p>
+                        <div class="up-card-info">
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-ubicacion.svg" alt="">
+                                    Zona Sur
+                                </span>
+                                <span class="up-area">50 m²</span>
+                            </div>
+                            <div class="up-info-row">
+                                <span class="up-info-item">
+                                    <img src="/assets/images/icons/icono-calendario.svg" alt="">
+                                    Inicio: 1 Feb 2026
+                                </span>
+                            </div>
+                        </div>
+                        <hr class="up-divider">
+                        <div class="up-card-estado">
+                            <span class="up-estado-label">Estado</span>
+                            <span class="up-badge-activa">Activa</span>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+    <script src="Js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csss/Unidad-Productiva.css">
+    <link rel="stylesheet" href="csss/detalle-unidad.css">
+    <link rel="stylesheet" href="csss/responsive.css"> 
+    <title>Detalle Unidad Productiva</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li class="activo"><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa"><button>☰</button></div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <!-- ===================== CONTENIDO DETALLE UNIDAD ===================== -->
+            <main class="du-contenido">
+
+                <button class="du-back" onclick="history.back()">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg" alt="Volver">
+                    Volver
+                </button>
+
+                <div class="du-header">
+                    <div class="du-header-texto">
+                        <h1>Tomate Cherry - Lote A</h1>
+                        <p>Solanum lycopersicum</p>
+                    </div>
+                    <div class="du-acciones">
+                    <button class="btn-editar" onclick="editarUnidad()">
+                        <img src="/assets/images/icons/icono-lapiz-cuadrado.svg" alt="">
+                        Editar
+                    </button>
+                    <button class="btn-eliminar" onclick="confirmarEliminar()">
+                        <img src="/assets/images/icons/icono-papelera.svg" alt="">
+                        Eliminar
+                    </button>
+                    </div>
+                </div>
+
+                <div class="du-stats-grid">
+                    <div class="du-stat">
+                        <p class="du-stat-label">Tipo</p>
+                        <p class="du-stat-valor">Hortalizas</p>
+                    </div>
+                    <div class="du-stat">
+                        <p class="du-stat-label">Zona</p>
+                        <p class="du-stat-valor">Zona Norte</p>
+                    </div>
+                    <div class="du-stat">
+                        <p class="du-stat-label">Área</p>
+                        <p class="du-stat-valor">150 m²</p>
+                    </div>
+                    <div class="du-stat">
+                        <p class="du-stat-label">Estado</p>
+                        <span class="du-badge-activa">Activa</span>
+                    </div>
+                </div>
+
+                <div class="du-tabs">
+                    <button class="du-tab activo" onclick="cambiarTab(this, 'general')">General</button>
+                    <button class="du-tab" onclick="cambiarTab(this, 'incidencias')">Incidencias</button>
+                    <button class="du-tab" onclick="cambiarTab(this, 'tratamientos')">Tratamientos</button>
+                    <button class="du-tab" onclick="cambiarTab(this, 'cosechas')">Cosechas</button>
+                </div>
+
+                <!-- Tab General -->
+                <div class="du-card" id="tab-general">
+                    <h2>Información General</h2>
+                    <div class="du-info-grid">
+                        <div class="du-info-item">
+                            <p class="du-info-label">Fecha de inicio</p>
+                            <p class="du-info-valor">15 Ene 2026</p>
+                        </div>
+                        <div class="du-info-item">
+                            <p class="du-info-label">Días activa</p>
+                            <p class="du-info-valor">100 días</p>
+                        </div>
+                    </div>
+                    <div class="du-notas">
+                        <p class="du-notas-label">Notas</p>
+                        <p class="du-notas-texto">Unidad de alta productividad con sistema de riego automatizado</p>
+                    </div>
+                </div>
+
+                <!-- Tab Incidencias -->
+                <div class="du-card du-tab-vacio" id="tab-incidencias" style="display:none;">
+                    <h2>Incidencias</h2>
+                    <div class="du-vacio">
+                        <img src="/assets/images/icons/icono-alerta-triangulo.svg" alt="" class="du-vacio-icono">
+                        <p>No hay incidencias registradas para esta unidad.</p>
+                    </div>
+                </div>
+
+                <!-- Tab Tratamientos -->
+                <div class="du-card du-tab-vacio" id="tab-tratamientos" style="display:none;">
+                    <h2>Tratamientos</h2>
+                    <div class="du-vacio">
+                        <img src="/assets/images/icons/icono-jeringa.svg" alt="" class="du-vacio-icono">
+                        <p>No hay tratamientos registrados para esta unidad.</p>
+                    </div>
+                </div>
+
+                <!-- Tab Cosechas -->
+                <div class="du-card du-tab-vacio" id="tab-cosechas" style="display:none;">
+                    <h2>Cosechas</h2>
+                    <div class="du-vacio">
+                        <img src="/assets/images/icons/icono-trigo.svg" alt="" class="du-vacio-icono">
+                        <p>No hay cosechas registradas para esta unidad.</p>
+                    </div>
+                </div>
+
+            </main>
+            <!-- ==================== FIN CONTENIDO DETALLE UNIDAD ==================== -->
+        </div>
+    </div>
+    <script src="Js/script.js"></script>
+</body>
+</html>

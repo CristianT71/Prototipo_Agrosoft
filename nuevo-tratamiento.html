@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csss/Unidad-Productiva.css">
+    <link rel="stylesheet" href="csss/nuevo-tratamiento.css">
+    <link rel="stylesheet" href="csss/responsive.css">
+    <title>Nuevo Tratamiento</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="./incidencias.html"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li class="activo"><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa"><button>☰</button></div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <main class="nt-contenido">
+
+                <button class="nt-back" onclick="history.back()">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg" alt="">
+                    Volver
+                </button>
+
+                <div class="nt-titulo">
+                    <h1>Nuevo Tratamiento</h1>
+                    <p>Registra un tratamiento aplicado a una unidad productiva</p>
+                </div>
+
+                <div class="nt-card">
+
+                    <div class="nt-grid-2">
+                        <div class="nt-campo">
+                            <label for="producto">Producto aplicado <span class="requerido">*</span></label>
+                            <input type="text" id="producto" placeholder="Ej: Fungicida orgánico, Fertilizante NPK">
+                        </div>
+                        <div class="nt-campo">
+                            <label for="dosificacion">Dosificación <span class="requerido">*</span></label>
+                            <input type="text" id="dosificacion" placeholder="Ej: 2.5 L/Ha, 50 kg/Ha">
+                        </div>
+                    </div>
+
+                    <div class="nt-grid-2">
+                        <div class="nt-campo">
+                            <label>Unidad Productiva <span class="requerido">*</span></label>
+                            <div class="nu-select-wrap" id="wrapUnidad">
+                                <div class="nu-select-custom" onclick="toggleSelectNu('opcionesUnidad', event)">
+                                    <span id="textoUnidad">Seleccionar unidad</span>
+                                    <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="nu-chevron">
+                                </div>
+                                <div class="nu-select-opciones" id="opcionesUnidad">
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesUnidad', 'textoUnidad', 'unidadProductivaVal', this, 'Tomate Cherry - Lote A', event)">Tomate Cherry - Lote A</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesUnidad', 'textoUnidad', 'unidadProductivaVal', this, 'Lechuga Crespa - Lote B', event)">Lechuga Crespa - Lote B</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesUnidad', 'textoUnidad', 'unidadProductivaVal', this, 'Pimentón - Invernadero 1', event)">Pimentón - Invernadero 1</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesUnidad', 'textoUnidad', 'unidadProductivaVal', this, 'Cilantro - Lote C', event)">Cilantro - Lote C</div>
+                                </div>
+                                <input type="hidden" id="unidadProductivaVal">
+                            </div>
+                        </div>
+                        <div class="nt-campo">
+                            <label>Incidencia relacionada</label>
+                            <div class="nu-select-wrap" id="wrapIncidencia">
+                                <div class="nu-select-custom" onclick="toggleSelectNu('opcionesIncidencia', event)">
+                                    <span id="textoIncidencia">Ninguna (Tratamiento preventivo)</span>
+                                    <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="nu-chevron">
+                                </div>
+                                <div class="nu-select-opciones" id="opcionesIncidencia">
+                                    <div class="nu-opcion nu-opcion-activa" onclick="seleccionarNu('opcionesIncidencia', 'textoIncidencia', 'incidenciaVal', this, 'Ninguna (Tratamiento preventivo)', event)">Ninguna (Tratamiento preventivo)</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesIncidencia', 'textoIncidencia', 'incidenciaVal', this, 'Manchas amarillas en hojas', event)">Manchas amarillas en hojas</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesIncidencia', 'textoIncidencia', 'incidenciaVal', this, 'Plagas de pulgón detectadas', event)">Plagas de pulgón detectadas</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesIncidencia', 'textoIncidencia', 'incidenciaVal', this, 'Deficiencia de nutrientes', event)">Deficiencia de nutrientes</div>
+                                </div>
+                                <input type="hidden" id="incidenciaVal" value="Ninguna (Tratamiento preventivo)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nt-grid-2">
+                        <div class="nt-campo">
+                            <label for="fechaAplicacion">Fecha de aplicación <span class="requerido">*</span></label>
+                            <input type="date" id="fechaAplicacion" value="2026-05-30">
+                        </div>
+                        <div class="nt-campo">
+                            <label for="fechaVencimiento">Fecha de vencimiento/reaplicación <span class="requerido">*</span></label>
+                            <input type="date" id="fechaVencimiento">
+                        </div>
+                    </div>
+
+                    <div class="nt-campo nt-campo-full">
+                        <label for="notas">Notas adicionales</label>
+                        <textarea id="notas" placeholder="Condiciones climáticas, método de aplicación, precauciones..."></textarea>
+                    </div>
+
+                    <div class="nt-seccion-label">Evidencia fotográfica de la aplicación</div>
+
+                    <div class="nt-upload-area" onclick="document.getElementById('inputFoto').click()" id="uploadArea">
+                        <div class="nt-upload-icono">
+                            <img src="/assets/images/icons/icono-camara.svg" alt="">
+                        </div>
+                        <p class="nt-upload-texto">Cargar evidencia fotográfica</p>
+                        <p class="nt-upload-sub">Máximo 3 fotos, 5MB cada una</p>
+                        <input type="file" id="inputFoto" accept="image/*" multiple style="display:none" onchange="mostrarFotos(event)">
+                    </div>
+
+                    <div class="nt-fotos-preview" id="fotosPreview"></div>
+
+                    <div class="nt-footer">
+                        <button class="btn-cancelar" onclick="window.location.href='./tratamientos.html'">Cancelar</button>
+                        <button class="btn-registrar" onclick="registrarTratamiento()">
+                            <img src="/assets/images/icons/icono-guardar.svg" alt="">
+                            Registrar Tratamiento
+                        </button>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>

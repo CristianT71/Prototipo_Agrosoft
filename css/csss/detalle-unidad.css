@@ -1,0 +1,255 @@
+/* ============================================================
+   CSS - Detalle Unidad Productiva
+   Archivo: csss/detalle-unidad.css
+   ============================================================ */
+
+.du-contenido {
+    padding: 80px 28px 28px 28px;
+    min-height: calc(100vh - 63px);
+}
+
+.du-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5A6C5A;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.du-back img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+.du-back:hover {
+    color: #2D7A3E;
+}
+
+/* ----- Encabezado ----- */
+.du-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.du-header-texto h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1A2E1A;
+    margin-bottom: 4px;
+}
+
+.du-header-texto p {
+    font-size: 13px;
+    color: #5A6C5A;
+    font-style: italic;
+}
+
+.du-acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-editar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    border: 1px solid #DDE8DD;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A2E1A;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-editar img {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-editar:hover {
+    background: #F3F7F2;
+}
+
+.btn-eliminar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #FEF0F0;
+    border: 1px solid #F5C1C1;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #A32D2D;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-eliminar img {
+    width: 16px;
+    height: 16px;
+    filter: invert(20%) sepia(80%) saturate(800%) hue-rotate(330deg);
+}
+
+.btn-eliminar:hover {
+    background: #F7C1C1;
+}
+
+/* ----- Stats de info rápida ----- */
+.du-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.du-stat {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #DDE8DD;
+    padding: 16px 18px;
+}
+
+.du-stat-label {
+    font-size: 11px;
+    color: #5A6C5A;
+    margin-bottom: 8px;
+}
+
+.du-stat-valor {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A2E1A;
+}
+
+.du-badge-activa {
+    display: inline-block;
+    background: #E7F3E8;
+    color: #2D7A3E;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+/* ----- Tabs ----- */
+.du-tabs {
+    display: flex;
+    background: #E8EFE8;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 20px;
+    gap: 4px;
+}
+
+.du-tab {
+    flex: 1;
+    text-align: center;
+    padding: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5A6C5A;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.du-tab.activo {
+    background: #ffffff;
+    color: #1A2E1A;
+}
+
+.du-tab:hover:not(.activo) {
+    background: rgba(255,255,255,0.5);
+}
+
+/* ----- Card de contenido ----- */
+.du-card {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #DDE8DD;
+    padding: 24px;
+}
+
+.du-card h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A2E1A;
+    margin-bottom: 20px;
+}
+
+.du-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.du-info-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.du-info-label {
+    font-size: 12px;
+    color: #5A6C5A;
+    margin-bottom: 4px;
+}
+
+.du-info-valor {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A2E1A;
+}
+
+.du-notas {
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid #F0F0F0;
+}
+
+.du-notas-label {
+    font-size: 12px;
+    color: #5A6C5A;
+    margin-bottom: 6px;
+}
+
+.du-notas-texto {
+    font-size: 14px;
+    color: #1A2E1A;
+    line-height: 1.5;
+}
+
+/* Estado vacío en tabs */
+.du-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    gap: 12px;
+}
+
+.du-vacio-icono {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+}
+
+.du-vacio p {
+    font-size: 14px;
+    color: #5A6C5A;
+}
+

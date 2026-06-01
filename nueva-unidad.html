@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csss/Unidad-Productiva.css">
+    <link rel="stylesheet" href="csss/nueva-unidad.css">
+    <link rel="stylesheet" href="csss/responsive.css">
+    <title>Nueva Unidad Productiva</title>
+</head>
+<body id="dashboard">
+    <div class="contenedor-dash">
+        <aside class="menu-lateral">
+            <div class="header-menu">
+                <img src="/assets/images/logo/logo-sena.png" alt="Logo Sena" class="logo">
+                <div class="texto-header">
+                    <h2>AgroSoft</h2>
+                    <p>Proyecto SENA</p>
+                    <div class="icono-cerrar">
+                        <img src="/assets/images/icons/icono-cerrar.svg">
+                    </div>
+                </div>
+                <div class="icono-cerrar2">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg">
+                </div>
+            </div>
+
+            <nav class="lista-menu">
+                <ul>
+                    <li><a href="./dashboard.html"><img src="/assets/images/icons/icono-inicio-w.svg"><span>Dashboard</span></a></li>
+                    <li class="activo"><a href="./Unidades-Productivas.html"><img src="/assets/images/icons/icono-paquete.svg"><span>Unidades Productivas</span></a></li>
+                    <li><a href="./incidencias.html"><img src="/assets/images/icons/icono-alerta-triangulo.svg"><span>Incidencias</span></a></li>
+                    <li><a href="./tratamientos.html"><img src="/assets/images/icons/icono-jeringa.svg"><span>Tratamientos</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-trigo.svg"><span>Cosechas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-signo-dolar.svg"><span>Ventas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo.svg"><span>Inventario</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-calendario.svg"><span>Tareas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-archivo-texto.svg"><span>Reportes</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-campana.svg"><span>Alertas</span></a></li>
+                    <li><a href="#"><img src="/assets/images/icons/icono-historial.svg"><span>Historial</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><img src="/assets/images/icons/icono-configuracion.svg"><span>Configuración</span></a></li>
+                    <li><a href="./login.html" style="color: #E91822;"><img src="/assets/images/icons/icono-cerrar-sesion.svg"><span>Cerrar Sesión</span></a></li>
+                </ul>
+                <div class="perfil-usuario">
+                    <div class="avatar">U</div>
+                    <div class="correo-usuario">
+                        <span>usuario@ejemplo.com</span>
+                        <span style="color: rgb(155, 161, 161);">User</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contenido-principal">
+            <header class="barra-superior">
+                <div class="boton-hamburguesa"><button>☰</button></div>
+                <div class="buscador">
+                    <img src="/assets/images/icons/icono-buscar.svg">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <div class="iconos-header">
+                    <button><img src="/assets/images/icons/icono-campana.svg"></button>
+                    <button>U</button>
+                </div>
+            </header>
+
+            <main class="nu-contenido">
+
+                <button class="nu-back" onclick="history.back()">
+                    <img src="/assets/images/icons/icono-chevron-izquierda.svg" alt="Volver">
+                    Volver
+                </button>
+
+                <div class="nu-titulo">
+                    <h1>Nueva Unidad Productiva</h1>
+                    <p>Registra una nueva unidad de producción</p>
+                </div>
+
+                <div class="nu-card">
+
+                    <div class="nu-grid-2">
+                        <div class="nu-campo">
+                            <label for="nombreUnidad">Nombre de la unidad <span class="requerido">*</span></label>
+                            <input type="text" id="nombreUnidad" placeholder="Ej: Tomate Cherry - Lote A">
+                        </div>
+                        <div class="nu-campo">
+                            <label>Tipo de cultivo <span class="requerido">*</span></label>
+                            <div class="nu-select-wrap" id="wrapTipo">
+                                <div class="nu-select-custom" onclick="toggleSelectNu('opcionesTipo', event)">
+                                    <span id="textoTipo">Seleccionar tipo</span>
+                                    <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="nu-chevron">
+                                </div>
+                                <div class="nu-select-opciones" id="opcionesTipo">
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesTipo', 'textoTipo', 'tipoCultivoVal', this, 'Hortalizas', event)">Hortalizas</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesTipo', 'textoTipo', 'tipoCultivoVal', this, 'Aromáticas', event)">Aromáticas</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesTipo', 'textoTipo', 'tipoCultivoVal', this, 'Frutales', event)">Frutales</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesTipo', 'textoTipo', 'tipoCultivoVal', this, 'Cereales', event)">Cereales</div>
+                                </div>
+                                <input type="hidden" id="tipoCultivoVal">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nu-grid-2">
+                        <div class="nu-campo">
+                            <label for="variedad">Variedad</label>
+                            <input type="text" id="variedad" placeholder="Ej: Solanum lycopersicum">
+                        </div>
+                        <div class="nu-campo">
+                            <label>Zona <span class="requerido">*</span></label>
+                            <div class="nu-select-wrap" id="wrapZona">
+                                <div class="nu-select-custom" onclick="toggleSelectNu('opcionesZona', event)">
+                                    <span id="textoZona">Seleccionar zona</span>
+                                    <img src="/assets/images/icons/icono-chevron-abajo.svg" alt="" class="nu-chevron">
+                                </div>
+                                <div class="nu-select-opciones" id="opcionesZona">
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesZona', 'textoZona', 'zonaVal', this, 'Zona Norte', event)">Zona Norte</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesZona', 'textoZona', 'zonaVal', this, 'Zona Sur', event)">Zona Sur</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesZona', 'textoZona', 'zonaVal', this, 'Zona Centro', event)">Zona Centro</div>
+                                    <div class="nu-opcion" onclick="seleccionarNu('opcionesZona', 'textoZona', 'zonaVal', this, 'Invernadero', event)">Invernadero</div>
+                                </div>
+                                <input type="hidden" id="zonaVal">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nu-grid-2">
+                        <div class="nu-campo">
+                            <label for="area">Área (m²) <span class="requerido">*</span></label>
+                            <input type="number" id="area" placeholder="150" min="1">
+                        </div>
+                        <div class="nu-campo">
+                            <label for="fechaInicio">Fecha de inicio</label>
+                            <input type="date" id="fechaInicio">
+                        </div>
+                    </div>
+
+                    <div class="nu-campo nu-campo-full">
+                        <label for="notas">Notas adicionales</label>
+                        <textarea id="notas" placeholder="Información adicional sobre la unidad productiva..."></textarea>
+                    </div>
+
+                    <hr class="nu-divider">
+
+                    <div class="nu-footer">
+                        <button class="btn-cancelar" onclick="window.location.href='./Unidades-Productivas.html'">Cancelar</button>
+                        <button class="btn-guardar" onclick="guardarUnidad()">
+                            <img src="/assets/images/icons/icono-guardar.svg" alt="">
+                            Guardar Unidad
+                        </button>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
