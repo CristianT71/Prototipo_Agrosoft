@@ -1322,14 +1322,22 @@ input[type="password"] {
 
 .tareas-grid .tarjeta-min img {
     position: relative;
-    top: -70px;
-    left: 240px;
+    top: -80px;
+    left: 220px;
+    width: 50px;
+    height: 50px;
 }
+
+.tareas-grid .tarjeta-min.tarjeta-min2 .tarjeta-icono-texto span { color: #FF6900; }
+.tareas-grid .tarjeta-min.tarjeta-min3 .tarjeta-icono-texto span { color: #10B981; }
+.tareas-grid .tarjeta-min.tarjeta-min4 .tarjeta-icono-texto span { color: #FB2C36; }
 
 .tarjeta-min1 { grid-column: 1/2; }
 .tarjeta-min2 { grid-column: 2/4; }
 .tarjeta-min3 { grid-column: 4/5; }
 .tarjeta-min4 { grid-column: 5/6; }
+
+
 
 /*Estilos del calendario*/
 .calendario {
