@@ -25,7 +25,7 @@ Sistema web desarrollado para el SENA que facilita la gestión integral de activ
 
 ## 📱 Características de Diseño
 
-- **Responsive**: Optimizado para desktop, tablet y móvil
+- **Responsive**: Optimizado para pc, tablet y móvil
 - **Modo Oscuro**: (Próximamente)
 - **Accesibilidad**: Cumple con estándares WCAG
 - **Performance**: Optimizado con lazy loading y code splitting
